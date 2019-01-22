@@ -134,7 +134,6 @@ $ php artisan serve
 ```php
 $ composer update
 $php artisan key:generate
-$php artisan app:name Curso
 ```
 
 ## Backend URL
