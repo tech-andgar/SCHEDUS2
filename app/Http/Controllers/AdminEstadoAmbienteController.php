@@ -30,7 +30,7 @@
 
 			# START COLUMNS DO NOT REMOVE THIS LINE
 			$this->col = [];
-			$this->col[] = ["label"=>"Estado Ambiente ID","name"=>"estado_ambiente_id","join"=>"estado_ambiente,estado_ambiente_name"];
+			$this->col[] = ["label"=>"Estado Ambiente ID","name"=>"estado_ambiente_id"];
 			$this->col[] = ["label"=>"Estado Ambiente Nombre","name"=>"estado_ambiente_name"];
 			# END COLUMNS DO NOT REMOVE THIS LINE
 
@@ -41,8 +41,7 @@
 
 			# OLD START FORM
 			//$this->form = [];
-			//$this->form[] = ["label"=>"Estado Ambiente Id","name"=>"estado_ambiente_id","type"=>"select2","required"=>TRUE,"validation"=>"required|integer|min:0","datatable"=>"estado_ambiente,estado_ambiente_name"];
-			//$this->form[] = ["label"=>"Estado Ambiente Name","name"=>"estado_ambiente_name","type"=>"text","required"=>TRUE,"validation"=>"required|min:1|max:255"];
+			//$this->form[] = ['label'=>'Estado Ambiente Nombre','name'=>'estado_ambiente_name','type'=>'text','validation'=>'required|min:1|max:191','width'=>'col-sm-10'];
 			# OLD END FORM
 
 			/* 
