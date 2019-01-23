@@ -8,25 +8,24 @@
 	class AdminSedeController extends \crocodicstudio\crudbooster\controllers\CBController {
 
 	    public function cbInit() {
-	    	# START CONFIGURATION DO NOT REMOVE THIS LINE
-			$this->table 			   = "sede";	        
-			$this->title_field         = "sede_name";
-			$this->limit               = 20;
-			$this->orderby             = "sede_id,desc";
-			$this->show_numbering      = FALSE;
-			$this->global_privilege    = FALSE;	        
-			$this->button_table_action = TRUE;   
-			$this->button_action_style = "button_icon";     
-			$this->button_add          = TRUE;
-			$this->button_delete       = TRUE;
-			$this->button_edit         = TRUE;
-			$this->button_detail       = TRUE;
-			$this->button_show         = TRUE;
-			$this->button_filter       = TRUE;        
-			$this->button_export       = FALSE;	        
-			$this->button_import       = FALSE;
-			$this->button_bulk_action  = TRUE;	
-			$this->sidebar_mode		   = "normal"; //normal,mini,collapse,collapse-mini
+
+			# START CONFIGURATION DO NOT REMOVE THIS LINE
+			$this->title_field = "sede_name";
+			$this->limit = "20";
+			$this->orderby = "sede_id,desc";
+			$this->global_privilege = false;
+			$this->button_table_action = true;
+			$this->button_bulk_action = true;
+			$this->button_action_style = "button_icon";
+			$this->button_add = true;
+			$this->button_edit = true;
+			$this->button_delete = true;
+			$this->button_detail = true;
+			$this->button_show = true;
+			$this->button_filter = true;
+			$this->button_import = false;
+			$this->button_export = false;
+			$this->table = "sede";
 			# END CONFIGURATION DO NOT REMOVE THIS LINE
 
 			# START COLUMNS DO NOT REMOVE THIS LINE
@@ -37,12 +36,17 @@
 			# END COLUMNS DO NOT REMOVE THIS LINE
 
 			# START FORM DO NOT REMOVE THIS LINE
-		$this->form = [];
-		$this->form[] = ["label"=>"Sede Id","name"=>"sede_id","type"=>"select2","required"=>TRUE,"validation"=>"required|integer|min:0","datatable"=>"sede,sede_name"];
-		$this->form[] = ["label"=>"Sede Name","name"=>"sede_name","type"=>"text","required"=>TRUE,"validation"=>"required|min:1|max:255"];
-		$this->form[] = ["label"=>"Sede Direccion","name"=>"sede_direccion","type"=>"text","required"=>TRUE,"validation"=>"required|min:1|max:255"];
+			$this->form = [];
+			$this->form[] = ['label'=>'Sede Nombre','name'=>'sede_name','type'=>'text','validation'=>'required|min:1|max:191','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Sede Dirección','name'=>'sede_direccion','type'=>'text','validation'=>'required|min:1|max:191','width'=>'col-sm-10'];
+			# END FORM DO NOT REMOVE THIS LINE
 
-			# END FORM DO NOT REMOVE THIS LINE     
+			# OLD START FORM
+			//$this->form = [];
+			//$this->form[] = ["label"=>"Sede Id","name"=>"sede_id","type"=>"select2","required"=>TRUE,"validation"=>"required|integer|min:0","datatable"=>"sede,sede_name"];
+			//$this->form[] = ["label"=>"Sede Name","name"=>"sede_name","type"=>"text","required"=>TRUE,"validation"=>"required|min:1|max:255"];
+			//$this->form[] = ["label"=>"Sede Direccion","name"=>"sede_direccion","type"=>"text","required"=>TRUE,"validation"=>"required|min:1|max:255"];
+			# OLD END FORM
 
 			/* 
 	        | ---------------------------------------------------------------------- 
