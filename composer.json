@@ -37,7 +37,7 @@
     },
     "autoload": {
         "psr-4": {
-            "SCHEDUS\\": "app/"
+            "App\\": "app/"
         },
         "classmap": [
             "database/seeds",
