@@ -1,5 +1,5 @@
 <?php 
-namespace SCHEDUS\Http\Controllers;
+namespace App\Http\Controllers;
 
 use DB;
 use Session;

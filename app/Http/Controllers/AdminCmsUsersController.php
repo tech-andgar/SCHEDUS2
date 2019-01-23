@@ -1,4 +1,4 @@
-<?php namespace SCHEDUS\Http\Controllers;
+<?php namespace App\Http\Controllers;
 
 use Session;
 use Request;

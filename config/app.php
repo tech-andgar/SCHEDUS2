@@ -171,11 +171,11 @@ return [
         /*
          * Application Service Providers...
          */
-        SCHEDUS\Providers\AppServiceProvider::class,
-        SCHEDUS\Providers\AuthServiceProvider::class,
-        // SCHEDUS\Providers\BroadcastServiceProvider::class,
-        SCHEDUS\Providers\EventServiceProvider::class,
-        SCHEDUS\Providers\RouteServiceProvider::class,
+        App\Providers\AppServiceProvider::class,
+        App\Providers\AuthServiceProvider::class,
+        // App\Providers\BroadcastServiceProvider::class,
+        App\Providers\EventServiceProvider::class,
+        App\Providers\RouteServiceProvider::class,
 
     ],
 
