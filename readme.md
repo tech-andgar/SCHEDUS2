@@ -148,3 +148,34 @@ $php artisan key:generate
 
 ## Table Of Contents
 - [Back To Index](./index.md)
+
+
+# Crear Modelo/Tabla desde consola ARTISAN
+
+```php
+php artisan make:model Models/Nombre_tabla -m
+```
+parametro -m:
+crear automaticamente al archivo para migracion
+
+crear 2 archivos son:
+- Model/Nombre_tabla.php
+- database/migrations/yyyy_mm_ddhhmm_create_nombreTabla_table.php
+
+
+Con el comando es **deshacer la última migración ejecutada** y registrada en la
+base de datos.
+```php
+php artisan migrate:rollback
+```
+
+Con el comando es **deshacer todas** las migraciones de la base de datos.
+```php
+php artisan migrate:reset
+```
+
+Un comando extra que nos permite **actualizar las migraciones** es el comando, el
+cual es equivalente a usar php artisan migrate:reset y después php artisan migrate.
+```php
+php artisan migrate:refresh
+```
