@@ -17,7 +17,8 @@ class CreateGruposTable extends Migration
             $table->increments('grupo_id');
             $table->integer('ficha_cod');
             $table->string('grupo_num', 3);
-            $table->integer('ruta_ficha_cod');
+            $table->integer('ruta_ficha_cod')->unsigned()->index()->nullable();
+            $table->foreign('ruta_ficha_cod')->references('ruta_ficha_id')->on('ruta_ficha');
             $table->timestamps();
         });
     }

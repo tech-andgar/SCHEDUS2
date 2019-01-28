@@ -16,6 +16,8 @@ class CreateEstadoAmbientesTable extends Migration
         Schema::create('estado_ambiente', function (Blueprint $table) {
             $table->increments('estado_ambiente_id');
             $table->string('estado_ambiente_name')->unique();
+            $table->integer('estado_ambiente_color')->unsigned()->index()->nullable();
+            $table->foreign('estado_ambiente_color')->references('status_color_id')->on('status_color');
             $table->timestamps();
         });
     }

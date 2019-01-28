@@ -17,8 +17,10 @@ class CreateActividadProyectosTable extends Migration
             $table->increments('actividad_proyecto_id');
             $table->string('actividad_proyecto_num', 5);
             $table->string('actividad_proyecto_name')->unique();
-            $table->integer('proyecto_cod');
-            $table->integer('fase_cod');
+            $table->integer('proyecto_cod')->unsigned()->index()->nullable();
+            $table->foreign('proyecto_cod')->references('proyecto_id')->on('proyecto');
+            $table->integer('fase_cod')->unsigned()->index()->nullable();
+            $table->foreign('fase_cod')->references('fase_id')->on('fase');
             $table->timestamps();
         });
     }
