@@ -39,7 +39,8 @@
 			# START FORM DO NOT REMOVE THIS LINE
 			$this->form = [];
             $this->form[] = ['label'=>'Ambiente Numero','name'=>'ambiente_num','type'=>'text','validation'=>'required|min:1|max:191','width'=>'col-sm-10'];
-            $this->form[] = ['label' => 'Sede', 'name' => 'sede_cod', 'type'=>'select','name'=>'sede_id','datatable'=>'sede,sede_name', 'width' => 'col-sm-10'];
+            $this->form[] = ['label'=>'Sede','name'=>'sede_cod','type'=>'select','datatable'=>'sede,sede_name', 'width' => 'col-sm-10'];
+            //this->form[] = ['label' => 'Sede', 'name' => 'sede_cod','type'=>'select','datatable'=>'sede,sede_name', 'width' => 'col-sm-10'];
 			$this->form[] = ['label'=>'Estado Ambiente','name'=>'estado_ambiente_cod','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10'];
 			# END FORM DO NOT REMOVE THIS LINE
 
