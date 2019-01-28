@@ -156,7 +156,7 @@ $php artisan key:generate
 php artisan make:model Models/Nombre_tabla -m
 ```
 parametro -m:
-crear automaticamente al archivo para migracion
+crear automaticamente un archivo de migracion para DB
 
 crear 2 archivos son:
 - Model/Nombre_tabla.php
