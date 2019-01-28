@@ -179,3 +179,34 @@ cual es equivalente a usar php artisan migrate:reset y después php artisan migr
 ```php
 php artisan migrate:refresh
 ```
+
+
+## Soluciones típicas por fallas comunes
+
+###Laravel 5 clear cache from route, view, config and all cache data from application
+
+Reoptimized class loader:
+
+```php
+php artisan optimize
+```
+
+Clear Cache facade value:
+```php
+php artisan cache:clear
+```
+
+Clear Route cache:
+```php
+php artisan route:cache
+```
+
+Clear View cache:
+```php
+php artisan view:clear
+```
+
+Clear Config cache:
+```php
+php artisan config:cache
+```
