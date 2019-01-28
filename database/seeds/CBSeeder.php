@@ -298,9 +298,9 @@ class Cms_modulsSeeder extends Seeder
     public function run()
     {
 
-        /*
+        /* 
             1 = Public
-            2 = Setting
+            2 = Setting        
         */
 
         $data = [
@@ -446,14 +446,11 @@ class Cms_usersSeeder extends Seeder
             $password = \Hash::make('123456');
             $cms_users = DB::table('cms_users')->insert([
                 'created_at' => date('Y-m-d H:i:s'),
-                'dni' => '1234567890',
                 'name' => 'Super Admin',
-                'apellido' => 'SCHEDUS',
                 'email' => 'admin@crudbooster.com',
                 'password' => $password,
                 'id_cms_privileges' => 1,
                 'status' => 'Active',
-                'rol_cod' => 1,
             ]);
         }
     }
