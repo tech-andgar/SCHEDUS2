@@ -19,7 +19,7 @@ class CreateFichasTable extends Migration
             $table->integer('estado_ficha_cod')->unsigned()->index()->nullable();
             $table->foreign('estado_ficha_cod')->references('estado_ficha_id')->on('estado_ficha');
             $table->integer('programa_formacion_cod')->unsigned()->index()->nullable();
-            $table->foreign('programa_formacion_cod')->references('programa_formacion_id')->on('programa_formacion_cod');
+            $table->foreign('programa_formacion_cod')->references('programa_formacion_id')->on('programa_formacion');
             $table->timestamps();
         });
     }

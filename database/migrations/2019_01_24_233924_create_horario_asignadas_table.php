@@ -25,15 +25,15 @@ class CreateHorarioAsignadasTable extends Migration
             $table->integer('resultado_aprendizaje_cod')->unsigned()->index()->nullable();
             $table->foreign('resultado_aprendizaje_cod')->references('resultado_aprendizaje_id')->on('resultado_aprendizaje');
             $table->integer('instructor_cod')->unsigned()->index()->nullable();
-            $table->foreign('instructor_cod')->references('instructor_id')->on('instructor');
+            $table->foreign('instructor_cod')->references('id')->on('cms_users');
             $table->integer('dias_cod')->unsigned()->index()->nullable();
             $table->foreign('dias_cod')->references('dias_id')->on('dias');
             $table->time('horario_asignada_hora_inicio');
             $table->time('horario_asignada_hora_fin');
             $table->integer('ambiente_cod')->unsigned()->index()->nullable();
             $table->foreign('ambiente_cod')->references('ambiente_id')->on('ambiente');
-            $table->integer('estado_horario_asignado_cod')->unsigned()->index()->nullable();
-            $table->foreign('estado_horario_asignado_cod')->references('estado_horario_asignado_id')->on('estado_horario_asignado');
+            $table->integer('estado_horario_asignada_cod')->unsigned()->index()->nullable();
+            $table->foreign('estado_horario_asignada_cod')->references('estado_horario_asignada_id')->on('estado_horario_asignada');
             $table->timestamps();
         });
     }
