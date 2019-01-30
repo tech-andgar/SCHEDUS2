@@ -1,5 +1,3 @@
-@extends('errors::illustrated-layout')
-
 @section('code', '404')
 @section('title', __('404 ERROR - No encontrada página'))
 <head>
@@ -15,7 +13,7 @@
 </head>
 
 <body>
-    <div id="container" class="container clear" style="margin-top: -10%">
+    <div id="container" class="container clear" style="margin-top: -5%">
         <div class="wrapper row">
             <section id="fof" class="clear">
                 <a class="go-back" href="javascript:history.go(-1)">Volver
@@ -98,7 +96,7 @@
                     -->
 
                 </div>
-                <a class="go-home" href="inicio">Inicio
+                <a class="go-home" href="/admin/login">Inicio
                     <br>&raquo;</a>
             </section>
         </div>
@@ -112,10 +110,3 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
         crossorigin="anonymous"></script>
 </body>
-
-@section('image')
-    <div style="background-image: url({{ asset('/svg/404.svg') }});" class="absolute pin bg-cover bg-no-repeat md:bg-left lg:bg-center">
-    </div>
-@endsection
-
-@section('message', __('Sorry, the page you are looking for could not be found.'))
