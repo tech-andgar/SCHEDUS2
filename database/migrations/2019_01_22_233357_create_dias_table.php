@@ -14,7 +14,7 @@ class CreateDiasTable extends Migration
     public function up()
     {
         Schema::create('dias', function (Blueprint $table) {
-            $table->increments('dias_id');
+            $table->increments('id');
             $table->string('dias_name')->unique();
             $table->timestamps();
         });

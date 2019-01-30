@@ -14,7 +14,7 @@ class CreateTrimestresTable extends Migration
     public function up()
     {
         Schema::create('trimestre', function (Blueprint $table) {
-            $table->increments('trimestre_id');
+            $table->increments('id');
             $table->string('trimestre_name')->unique();
             $table->date('trimestre_fecha_inicio');
             $table->date('trimestre_fecha_fin');

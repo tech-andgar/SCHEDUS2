@@ -14,9 +14,9 @@ class CreateCompetenciasTable extends Migration
     public function up()
     {
         Schema::create('competencia', function (Blueprint $table) {
-            $table->increments('competencia_id');
+            $table->increments('id');
             $table->integer('programa_formacion_cod')->unsigned()->index()->nullable();
-            $table->foreign('programa_formacion_cod')->references('programa_formacion_id')->on('programa_formacion');
+            $table->foreign('programa_formacion_cod')->references('id')->on('programa_formacion');
             $table->string('competencia_num');
             $table->string('competencia_name');
             $table->timestamps();

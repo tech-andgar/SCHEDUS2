@@ -14,12 +14,12 @@ class CreateAmbientesTable extends Migration
     public function up()
     {
         Schema::create('ambiente', function (Blueprint $table) {
-            $table->increments('ambiente_id');
+            $table->increments('id');
             $table->string('ambiente_num');
             $table->integer('sede_cod')->unsigned()->index()->nullable();
-            $table->foreign('sede_cod')->references('sede_id')->on('sede');
+            $table->foreign('sede_cod')->references('id')->on('sede');
             $table->integer('estado_ambiente_cod')->unsigned()->index()->nullable();
-            $table->foreign('estado_ambiente_cod')->references('estado_ambiente_id')->on('estado_ambiente');
+            $table->foreign('estado_ambiente_cod')->references('id')->on('estado_ambiente');
             $table->timestamps();
         });
     }

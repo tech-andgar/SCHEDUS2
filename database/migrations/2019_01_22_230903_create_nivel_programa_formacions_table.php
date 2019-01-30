@@ -14,7 +14,7 @@ class CreateNivelProgramaFormacionsTable extends Migration
     public function up()
     {
         Schema::create('nivel_programa_formacion', function (Blueprint $table) {
-            $table->increments('nivel_programa_formacion_id');
+            $table->increments('id');
             $table->string('nivel_programa_formacion_name')->unique();
             $table->string('nivel_programa_formacion_duracion');
             $table->timestamps();

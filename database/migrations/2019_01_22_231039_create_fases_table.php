@@ -14,7 +14,7 @@ class CreateFasesTable extends Migration
     public function up()
     {
         Schema::create('fase', function (Blueprint $table) {
-            $table->increments('fase_id');
+            $table->increments('id');
             $table->string('fase_name')->unique();
             $table->timestamps();
         });

@@ -14,17 +14,17 @@ class CreateProgramaFormacionsTable extends Migration
     public function up()
     {
         Schema::create('programa_formacion', function (Blueprint $table) {
-            $table->increments('programa_formacion_id');
+            $table->increments('id');
             $table->integer('programa_formacion_codigo');
             $table->string('programa_formacion_short_name');
             $table->string('programa_formacion_name')->unique();
             $table->string('programa_formacion_version');
             $table->integer('nivel_programa_formacion_cod')->unsigned()->index()->nullable();
-            $table->foreign('nivel_programa_formacion_cod')->references('nivel_programa_formacion_id')->on('nivel_programa_formacion');
+            $table->foreign('nivel_programa_formacion_cod')->references('id')->on('nivel_programa_formacion');
             $table->integer('proyecto_cod')->unsigned()->index()->nullable();
-            $table->foreign('proyecto_cod')->references('proyecto_id')->on('proyecto');
+            $table->foreign('proyecto_cod')->references('id')->on('proyecto');
             $table->integer('estado_programa_formacion_cod')->unsigned()->index()->nullable();
-            $table->foreign('estado_programa_formacion_cod')->references('estado_programa_formacion_id')->on('estado_programa_formacion');
+            $table->foreign('estado_programa_formacion_cod')->references('id')->on('estado_programa_formacion');
             $table->timestamps();
         });
     }

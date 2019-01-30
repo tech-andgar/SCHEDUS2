@@ -14,10 +14,10 @@ class CreateEstadoProgramaFormacionsTable extends Migration
     public function up()
     {
         Schema::create('estado_programa_formacion', function (Blueprint $table) {
-            $table->increments('estado_programa_formacion_id');
+            $table->increments('id');
             $table->string('estado_programa_formacion_name')->unique();
             $table->integer('estado_programa_color')->unsigned()->index()->nullable();
-            $table->foreign('estado_programa_color')->references('status_color_id')->on('status_color');
+            $table->foreign('estado_programa_color')->references('id')->on('status_color');
             $table->timestamps();
         });
     }

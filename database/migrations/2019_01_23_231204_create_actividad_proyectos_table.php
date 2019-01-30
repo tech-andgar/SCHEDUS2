@@ -14,13 +14,13 @@ class CreateActividadProyectosTable extends Migration
     public function up()
     {
         Schema::create('actividad_proyecto', function (Blueprint $table) {
-            $table->increments('actividad_proyecto_id');
+            $table->increments('id');
             $table->string('actividad_proyecto_num', 5);
             $table->string('actividad_proyecto_name')->unique();
             $table->integer('proyecto_cod')->unsigned()->index()->nullable();
-            $table->foreign('proyecto_cod')->references('proyecto_id')->on('proyecto');
+            $table->foreign('proyecto_cod')->references('id')->on('proyecto');
             $table->integer('fase_cod')->unsigned()->index()->nullable();
-            $table->foreign('fase_cod')->references('fase_id')->on('fase');
+            $table->foreign('fase_cod')->references('id')->on('fase');
             $table->timestamps();
         });
     }

@@ -14,10 +14,10 @@ class CreateEstadoHorarioAsignadasTable extends Migration
     public function up()
     {
         Schema::create('estado_horario_asignada', function (Blueprint $table) {
-            $table->increments('estado_horario_asignada_id');
+            $table->increments('id');
             $table->string('estado_horario_asignada_name')->unique();
             $table->integer('estado_horario_asignada_color')->unsigned()->index()->nullable();
-            $table->foreign('estado_horario_asignada_color')->references('status_color_id')->on('status_color');
+            $table->foreign('estado_horario_asignada_color')->references('id')->on('status_color');
             $table->timestamps();
         });
     }

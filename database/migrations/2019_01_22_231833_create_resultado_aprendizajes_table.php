@@ -14,7 +14,7 @@ class CreateResultadoAprendizajesTable extends Migration
     public function up()
     {
         Schema::create('resultado_aprendizaje', function (Blueprint $table) {
-            $table->increments('resultado_aprendizaje_id');
+            $table->increments('id');
             $table->integer('resultado_aprendizaje_num');
             $table->string('resultado_aprendizaje_name');
             $table->timestamps();

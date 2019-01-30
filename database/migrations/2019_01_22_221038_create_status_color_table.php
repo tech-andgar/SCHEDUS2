@@ -14,7 +14,7 @@ class CreateStatusColorTable extends Migration
     public function up()
     {
         Schema::create('status_color', function (Blueprint $table) {
-            $table->increments('status_color_id');
+            $table->increments('id');
             $table->string('status_color_name')->unique();
             $table->timestamps();
         });
