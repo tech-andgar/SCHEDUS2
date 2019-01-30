@@ -148,7 +148,7 @@ class Cms_settingsSeeder extends Seeder
                 'name' => 'appname',
                 'label' => 'Application Name',
                 'group_setting' => trans('crudbooster.application_setting'),
-                'content' => 'CRUDBooster',
+                'content' => 'SCHEDUS',
                 'content_input_type' => 'text',
                 'dataenum' => null,
                 'helper' => null,
@@ -167,7 +167,7 @@ class Cms_settingsSeeder extends Seeder
                 'created_at' => date('Y-m-d H:i:s'),
                 'name' => 'logo',
                 'label' => 'Logo',
-                'content' => '',
+                'content' => 'uploads/2019-01/d3dba3448f4cbae6aeeb30539535ded1.png',
                 'content_input_type' => 'upload_image',
                 'group_setting' => trans('crudbooster.application_setting'),
                 'dataenum' => null,
@@ -177,7 +177,7 @@ class Cms_settingsSeeder extends Seeder
                 'created_at' => date('Y-m-d H:i:s'),
                 'name' => 'favicon',
                 'label' => 'Favicon',
-                'content' => '',
+                'content' => 'uploads/2019-01/e4b21b63b83cec75a9c6770e023521ce.webp',
                 'content_input_type' => 'upload_image',
                 'group_setting' => trans('crudbooster.application_setting'),
                 'dataenum' => null,
@@ -450,6 +450,38 @@ class Cms_usersSeeder extends Seeder
                 'email' => 'admin@crudbooster.com',
                 'password' => $password,
                 'id_cms_privileges' => 1,
+                'status' => 'Active',
+            ]);
+            $cms_users = DB::table('cms_users')->insert([
+                'created_at' => date('Y-m-d H:i:s'),
+                'name' => 'Andrés García',
+                'email' => 'afgarcia0479@misena.edu.co',
+                'password' => $password,
+                'id_cms_privileges' => 1,
+                'status' => 'Active',
+            ]);
+            $cms_users = DB::table('cms_users')->insert([
+                'created_at' => date('Y-m-d H:i:s'),
+                'name' => 'Johann Abelardo Amaya',
+                'email' => 'jaamaya643@misena.edu.co',
+                'password' => $password,
+                'id_cms_privileges' => 1,
+                'status' => 'Active',
+            ]);
+            $cms_users = DB::table('cms_users')->insert([
+                'created_at' => date('Y-m-d H:i:s'),
+                'name' => 'Diana Carolina Pinzon',
+                'email' => 'dpinzoncas@misena.edu.co',
+                'password' => $password,
+                'id_cms_privileges' => 0,
+                'status' => 'Active',
+            ]);
+            $cms_users = DB::table('cms_users')->insert([
+                'created_at' => date('Y-m-d H:i:s'),
+                'name' => 'Germán Gilberto Alacrón',
+                'email' => 'ggalarcon@misena.edu.co',
+                'password' => $password,
+                'id_cms_privileges' => 0,
                 'status' => 'Active',
             ]);
         }
