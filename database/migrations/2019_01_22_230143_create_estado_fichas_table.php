@@ -15,9 +15,9 @@ class CreateEstadoFichasTable extends Migration
     {
         Schema::create('estado_ficha', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('estado_ficha_name')->unique();
-            $table->integer('estado_ficha_color')->unsigned()->index()->nullable();
-            $table->foreign('estado_ficha_color')->references('id')->on('status_color');
+            $table->string('name')->unique();
+            $table->integer('status_color_id')->unsigned()->index()->nullable();
+            $table->foreign('status_color_id')->references('id')->on('status_color');
             $table->timestamps();
         });
     }

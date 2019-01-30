@@ -15,9 +15,9 @@ class CreateTrimestresTable extends Migration
     {
         Schema::create('trimestre', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('trimestre_name')->unique();
-            $table->date('trimestre_fecha_inicio');
-            $table->date('trimestre_fecha_fin');
+            $table->string('name')->unique();
+            $table->date('fecha_inicio');
+            $table->date('fecha_fin');
             $table->timestamps();
         });
     }

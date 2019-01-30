@@ -15,11 +15,11 @@ class CreateFichasTable extends Migration
     {
         Schema::create('ficha', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('ficha_num');
-            $table->integer('estado_ficha_cod')->unsigned()->index()->nullable();
-            $table->foreign('estado_ficha_cod')->references('id')->on('estado_ficha');
-            $table->integer('programa_formacion_cod')->unsigned()->index()->nullable();
-            $table->foreign('programa_formacion_cod')->references('id')->on('programa_formacion');
+            $table->string('code');
+            $table->integer('estado_ficha_id')->unsigned()->index()->nullable();
+            $table->foreign('estado_ficha_id')->references('id')->on('estado_ficha');
+            $table->integer('programa_formacion_id')->unsigned()->index()->nullable();
+            $table->foreign('programa_formacion_id')->references('id')->on('programa_formacion');
             $table->timestamps();
         });
     }

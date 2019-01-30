@@ -15,7 +15,7 @@ class CreateJornadasTable extends Migration
     {
         Schema::create('jornada', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('jornada_name')->unique();
+            $table->string('name')->unique();
             $table->timestamps();
         });
     }

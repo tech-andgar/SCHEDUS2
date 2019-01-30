@@ -15,13 +15,13 @@ class CreateRutaFichasTable extends Migration
     {
         Schema::create('ruta_ficha', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('ruta_ficha_name')->unique();
-            $table->string('ruta_ficha_num');
-            $table->integer('jornada_cod')->unsigned()->index()->nullable();
-            $table->foreign('jornada_cod')->references('id')->on('jornada');
-            $table->date('ruta_ficha_fecha_inicio');
-            $table->date('ruta_ficha_fecha_fin');
-            $table->text('ruta_ficha_observaciones');
+            $table->string('name')->unique();
+            $table->string('number');
+            $table->integer('jornada_id')->unsigned()->index()->nullable();
+            $table->foreign('jornada_id')->references('id')->on('jornada');
+            $table->date('fecha_inicio');
+            $table->date('fecha_fin');
+            $table->text('observaciones');
             $table->timestamps();
         });
     }
