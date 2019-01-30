@@ -12,7 +12,7 @@
 			# START CONFIGURATION DO NOT REMOVE THIS LINE
 			$this->title_field = "status_color_name";
 			$this->limit = "20";
-			$this->orderby = "status_color_id,asc";
+			$this->orderby = "id,asc";
 			$this->global_privilege = false;
 			$this->button_table_action = true;
 			$this->button_bulk_action = true;
@@ -30,18 +30,16 @@
 
 			# START COLUMNS DO NOT REMOVE THIS LINE
 			$this->col = [];
-			$this->col[] = ["label"=>"Status Color Id","name"=>"status_color_id"];
-			$this->col[] = ["label"=>"Status Color Name","name"=>"status_color_name"];
+			$this->col[] = ["label"=>"Paleta de color","name"=>"status_color_name"];
 			# END COLUMNS DO NOT REMOVE THIS LINE
 
 			# START FORM DO NOT REMOVE THIS LINE
 			$this->form = [];
-			$this->form[] = ['label'=>'Status Color Name','name'=>'status_color_name','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Status Color Name','name'=>'status_color_name','type'=>'text','validation'=>'required|min:3|max:191','width'=>'col-sm-10'];
 			# END FORM DO NOT REMOVE THIS LINE
 
 			# OLD START FORM
 			//$this->form = [];
-			//$this->form[] = ["label"=>"Status Color Id","name"=>"status_color_id","type"=>"select2","required"=>TRUE,"validation"=>"required|integer|min:0","datatable"=>"status_color,status_color_name"];
 			//$this->form[] = ["label"=>"Status Color Name","name"=>"status_color_name","type"=>"text","required"=>TRUE,"validation"=>"required|min:1|max:255"];
 			# OLD END FORM
 
