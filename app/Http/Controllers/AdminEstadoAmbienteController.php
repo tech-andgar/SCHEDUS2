@@ -12,7 +12,7 @@
 			# START CONFIGURATION DO NOT REMOVE THIS LINE
 			$this->title_field = "estado_ambiente_name";
 			$this->limit = "20";
-			$this->orderby = "estado_ambiente_id,desc";
+			$this->orderby = "id,desc";
 			$this->global_privilege = false;
 			$this->button_table_action = true;
 			$this->button_bulk_action = true;
@@ -30,18 +30,20 @@
 
 			# START COLUMNS DO NOT REMOVE THIS LINE
 			$this->col = [];
-			$this->col[] = ["label"=>"Estado Ambiente ID","name"=>"estado_ambiente_id"];
-			$this->col[] = ["label"=>"Estado Ambiente Nombre","name"=>"estado_ambiente_name"];
+			$this->col[] = ["label"=>"Estado Ambiente","name"=>"estado_ambiente_name"];
+			$this->col[] = ["label"=>"Color","name"=>"estado_ambiente_color","join"=>"status_color,status_color_name"];
 			# END COLUMNS DO NOT REMOVE THIS LINE
 
 			# START FORM DO NOT REMOVE THIS LINE
 			$this->form = [];
-			$this->form[] = ['label'=>'Estado Ambiente Nombre','name'=>'estado_ambiente_name','type'=>'text','validation'=>'required|min:1|max:191','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Estado Ambiente Name','name'=>'estado_ambiente_name','type'=>'text','validation'=>'required|min:1|max:191','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Estado Ambiente Color','name'=>'estado_ambiente_color','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'status_color,status_color_name'];
 			# END FORM DO NOT REMOVE THIS LINE
 
 			# OLD START FORM
 			//$this->form = [];
-			//$this->form[] = ['label'=>'Estado Ambiente Nombre','name'=>'estado_ambiente_name','type'=>'text','validation'=>'required|min:1|max:191','width'=>'col-sm-10'];
+			//$this->form[] = ["label"=>"Estado Ambiente Name","name"=>"estado_ambiente_name","type"=>"text","required"=>TRUE,"validation"=>"required|min:1|max:255"];
+			//$this->form[] = ["label"=>"Estado Ambiente Color","name"=>"estado_ambiente_color","type"=>"number","required"=>TRUE,"validation"=>"required|integer|min:0"];
 			# OLD END FORM
 
 			/* 
