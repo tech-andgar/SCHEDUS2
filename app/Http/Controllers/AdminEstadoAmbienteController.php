@@ -10,9 +10,9 @@
 	    public function cbInit() {
 
 			# START CONFIGURATION DO NOT REMOVE THIS LINE
-			$this->title_field = "estado_ambiente_name";
+			$this->title_field = "name";
 			$this->limit = "20";
-			$this->orderby = "id,desc";
+			$this->orderby = "id,asc";
 			$this->global_privilege = false;
 			$this->button_table_action = true;
 			$this->button_bulk_action = true;
@@ -30,20 +30,20 @@
 
 			# START COLUMNS DO NOT REMOVE THIS LINE
 			$this->col = [];
-			$this->col[] = ["label"=>"Estado Ambiente","name"=>"estado_ambiente_name"];
-			$this->col[] = ["label"=>"Color","name"=>"estado_ambiente_color","join"=>"status_color,status_color_name"];
+			$this->col[] = ["label"=>"Nombre","name"=>"name"];
+			$this->col[] = ["label"=>"paleta de color","name"=>"status_color_id","join"=>"status_color,name"];
 			# END COLUMNS DO NOT REMOVE THIS LINE
 
 			# START FORM DO NOT REMOVE THIS LINE
 			$this->form = [];
-			$this->form[] = ['label'=>'Estado Ambiente Name','name'=>'estado_ambiente_name','type'=>'text','validation'=>'required|min:1|max:191','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Estado Ambiente Color','name'=>'estado_ambiente_color','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'status_color,status_color_name'];
+			$this->form[] = ['label'=>'Nombre estado de ambiente','name'=>'name','type'=>'text','validation'=>'required|string|min:3|max:70','width'=>'col-sm-10','placeholder'=>'Puedes introducir solo una letra'];
+			$this->form[] = ['label'=>'Paleta de color','name'=>'status_color_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'status_color,name'];
 			# END FORM DO NOT REMOVE THIS LINE
 
 			# OLD START FORM
 			//$this->form = [];
-			//$this->form[] = ["label"=>"Estado Ambiente Name","name"=>"estado_ambiente_name","type"=>"text","required"=>TRUE,"validation"=>"required|min:1|max:255"];
-			//$this->form[] = ["label"=>"Estado Ambiente Color","name"=>"estado_ambiente_color","type"=>"number","required"=>TRUE,"validation"=>"required|integer|min:0"];
+			//$this->form[] = ["label"=>"Name","name"=>"name","type"=>"text","required"=>TRUE,"validation"=>"required|string|min:3|max:70","placeholder"=>"Puedes introducir solo una letra"];
+			//$this->form[] = ["label"=>"Status Color Id","name"=>"status_color_id","type"=>"select2","required"=>TRUE,"validation"=>"required|integer|min:0","datatable"=>"status_color,name"];
 			# OLD END FORM
 
 			/* 
