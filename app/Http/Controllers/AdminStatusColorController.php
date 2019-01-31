@@ -10,7 +10,7 @@
 	    public function cbInit() {
 
 			# START CONFIGURATION DO NOT REMOVE THIS LINE
-			$this->title_field = "status_color_name";
+			$this->title_field = "name";
 			$this->limit = "20";
 			$this->orderby = "id,asc";
 			$this->global_privilege = false;
@@ -30,17 +30,17 @@
 
 			# START COLUMNS DO NOT REMOVE THIS LINE
 			$this->col = [];
-			$this->col[] = ["label"=>"Paleta de color","name"=>"status_color_name"];
+			$this->col[] = ["label"=>"paleta de color","name"=>"name"];
 			# END COLUMNS DO NOT REMOVE THIS LINE
 
 			# START FORM DO NOT REMOVE THIS LINE
 			$this->form = [];
-			$this->form[] = ['label'=>'Status Color Name','name'=>'status_color_name','type'=>'text','validation'=>'required|min:3|max:191','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Paleta de color','name'=>'name','type'=>'text','validation'=>'required|string|min:3|max:70','width'=>'col-sm-10','placeholder'=>'Puedes introducir solo una letra'];
 			# END FORM DO NOT REMOVE THIS LINE
 
 			# OLD START FORM
 			//$this->form = [];
-			//$this->form[] = ["label"=>"Status Color Name","name"=>"status_color_name","type"=>"text","required"=>TRUE,"validation"=>"required|min:1|max:255"];
+			//$this->form[] = ["label"=>"Name","name"=>"name","type"=>"text","required"=>TRUE,"validation"=>"required|string|min:3|max:70","placeholder"=>"Puedes introducir solo una letra"];
 			# OLD END FORM
 
 			/* 
