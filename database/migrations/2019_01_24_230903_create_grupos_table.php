@@ -15,7 +15,8 @@ class CreateGruposTable extends Migration
     {
         Schema::create('grupo', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('ficha_cod');
+            $table->integer('ficha_id')->unsigned()->index()->nullable();
+            $table->foreign('ficha_id')->references('id')->on('ficha');
             $table->string('number', 3);
             $table->integer('ruta_ficha_id')->unsigned()->index()->nullable();
             $table->foreign('ruta_ficha_id')->references('id')->on('ruta_ficha');
