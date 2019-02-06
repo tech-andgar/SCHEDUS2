@@ -28,12 +28,12 @@ Laravel necesita un servidor web. No importa cuál sea pero la mayoría de la co
 ### Instalación de XAMPP (Windows - Nivel Básico)
 XAMPP es un programa que nos ofrece una distribución de Apache, MySQL, PHP y
 Perl muy simple de instalar, administrar y utilizar. Podemos descargarlo
-[aquí.](https://www.apachefriends.org/es/download.html)
+[aquí.](https://https://www.apachefriends.org/es/download.html)
 
 ### Instalación de WAMP (Windows - Nivel Inttermedio)
 WAMP es un programa que nos ofrece una distribución de Apache, MySQL, PHP y
 Perl muy simple de instalar, administrar y utilizar. Podemos descargarlo
-[aquí.](https://www.apachefriends.org/es/download.html)
+[aquí.](https://https://www.apachefriends.org/es/download.html)
 
 ### Instalación de LAMP (Linux)
 LAMP es el conjunto de aplicaciones Apache, MySQL, PHP o Python en entornos
@@ -73,25 +73,88 @@ Open the terminal, run the following command at the terminal
 ```shell
 $ php -i
 ```
-if not haved installed PHP, get installer on [PHP](www.PHP.com) or [wamp](www.wamp.com)
+if not haved installed PHP, get installer on [PHP](https://www.PHP.com) or
+[wamp](https://www.wamp.com)
+
+if have installed PHP, but no working this command. Need configure variable
+Create new environment variable for PHP command
+For this it is enough to open the properties of the system.
+
+Abra busqueda de Windows o botón Windows 10
+"Editar las variables de entorno del sistema"
+
+![Propiedades_sistema](docs\assets\images\Variables_entorno\01_Propiedades_del_sistema_Windows_10.png "Ventana
+de Propiedades del sistema de Windows 10")
+
+Ventana de "Propiedades del sistema" de Windows 10
+
+
+y encontrar dentro de la ventana el botón "Variables de entorno".
+
+
+
+![Variables_entorno](docs\assets\images\Variables_entorno\02_Variables_de_entorno_Windows_10.png "Ventana de Variables
+de entorno de Windows 10")
+
+Ventana de "Variables de entorno" de Windows 10
+
+
+Una vez dentro de esta ventana basta con editar la variable de sistema llamada
+Path y agregaremos anteponiendo un símbolo punto y coma (;) al valor de la
+variable.
+
+![Variables_entorno](./docs/assets/images/Variables_de_entorno_Windows_10.png "Ventana de Variables
+de entorno de Windows 10")
+
+![Editar_variables_entorno](docs\assets\images\Variables_entorno\03_Editar_variable_de_entorno_Windows_10.png
+"Ventana de Editar Variables de entorno de Windows 10")
+
+
+
+Ventana "Editar la variable del sistema" de Windows 10 editando la variable
+"Path"
+
+
+![Buscar_carpeta_variables_entorno](docs\assets\images\Variables_entorno\04_Buscar_carpeta_ruta_php_7.3.1_Windows_10.png
+"Ventana de buscar ruta de carpeta PHP de Windows 10")
+
+
+![Marcar_carpeta_PHP_variables_entorno](docs\assets\images\Variables_entorno\05_Editar_variable_de_entorno_PHP7.3_Windows_10.png
+"Ventana de Marcar carpeta PHP de Windows 10")
+
+y marcando el texto "C:\wamp64\bin\php\php7.3.1".
+
+
+
+Finalmente podemos probar nuestro comando instalado usando el comando "php -i"
+en nuestro terminal (cmd).
+```shell
+$ php -i
+```
+
+> De la misma manera en que podemos crear una variable de entorno para php, es
+> que podemos hacerlo para múltiples programas como puede ser mysql, node,
+> mongodb y otros software de nuestro interés.
+
+---
 
 #### 1.2 COMPOSER
 ```shell
 $ composer -v
 ```
-if not haved installed composer, get installer on [COMPOSER INSTALLER](https://getcomposer.org)
+if not haved installed composer, get installer on [COMPOSER INSTALLER](https://getcomposer.org/Composer-Setup.exe)
 
 #### 1.3 NPM
 ```shell
 $ npm -v
 ```
-if not haved installed npm, get installer on [NPM INSTALLER](www.npm.com)
+if not haved installed npm, get installer on [NPM INSTALLER](https://nodejs.org/es/)
 
 #### 1.4 YARN
 ```shell
 $ yarn -v
 ```
-if not haved installed yarn, get installer on [YARN INSTALLER](www.yarn.com)
+if not haved installed yarn, get installer on [YARN INSTALLER](https://yarnpkg.com/latest.msi)
 
 #### 1.5 GIT
 Installed git on system
@@ -99,7 +162,7 @@ Installed git on system
 ```shell
 $ git -v
 ```
-if not haved installed git, get installer on [GIT INSTALLER](www.git.com)
+if not haved installed git, get installer on [GIT INSTALLER](https://git-scm.com/downloads)
 
 
 ### 2. Install project
@@ -107,24 +170,27 @@ if not haved installed git, get installer on [GIT INSTALLER](www.git.com)
    the project of SCHEDUS
 
 ```shell
-$ git clone www.github.com/andgar2010/SCHEDUS2.git
+$ git clone https://www.github.com/andgar2010/SCHEDUS2.git
 ```
 
 2. Run the following command at the terminal. Una vez instalado laravel es recomendable situarse en la raíz del proyecto y ejecutar:
 ```shell
 $ cd SCHEDUS2
 $ composer install && yarn install
-$ php artisan key:generate
 ```
 
-3. Setting the database configuration, open .env file at project root directory
+3. If no haved Setting the database configuration, open .env file at project root directory
 ```
 DB_DATABASE=**your_db_name**
 DB_USERNAME=**your_db_user**
 DB_PASSWORD=**password**
 ```
+4. if not haved APP_KEY in .env
+```shell
+$ php artisan key:generate
+```
 
-4. Run the following command at the terminal for worked page on server
+5. Run the following command at the terminal for worked page on server
 ```php
 $ php artisan serve
 ```
