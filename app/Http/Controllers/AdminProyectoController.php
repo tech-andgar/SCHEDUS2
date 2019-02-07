@@ -31,16 +31,20 @@
 			# START COLUMNS DO NOT REMOVE THIS LINE
 			$this->col = [];
 			$this->col[] = ["label"=>"Nombre","name"=>"name"];
+			$this->col[] = ["label"=>"Código","name"=>"code"];
+			$this->col[] = ["label"=>"Código SofiaPlus","name"=>"is_cod_sofiaplus"];
 			# END COLUMNS DO NOT REMOVE THIS LINE
 
 			# START FORM DO NOT REMOVE THIS LINE
 			$this->form = [];
 			$this->form[] = ['label'=>'Nombre del proyecto','name'=>'name','type'=>'text','validation'=>'required|string|min:3|max:70','width'=>'col-sm-10','placeholder'=>'Puedes introducir solo una letra'];
+			$this->form[] = ['label'=>'Código','name'=>'code','type'=>'text','validation'=>'required|integer|min:100000|max:9999999','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'¿Código SofiaPlus?','name'=>'is_cod_sofiaplus','type'=>'checkbox','validation'=>'required','width'=>'col-sm-10','dataenum'=>'1|'];
 			# END FORM DO NOT REMOVE THIS LINE
 
 			# OLD START FORM
 			//$this->form = [];
-			//$this->form[] = ["label"=>"Name","name"=>"name","type"=>"text","required"=>TRUE,"validation"=>"required|string|min:3|max:70","placeholder"=>"Puedes introducir solo una letra"];
+			//$this->form[] = ['label'=>'Nombre del proyecto','name'=>'name','type'=>'text','validation'=>'required|string|min:3|max:70','width'=>'col-sm-10','placeholder'=>'Puedes introducir solo una letra'];
 			# OLD END FORM
 
 			/* 
