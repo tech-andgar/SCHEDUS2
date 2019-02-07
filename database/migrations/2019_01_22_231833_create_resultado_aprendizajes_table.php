@@ -17,6 +17,8 @@ class CreateResultadoAprendizajesTable extends Migration
             $table->increments('id');
             $table->integer('num');
             $table->string('name');
+            $table->integer('competencia_id')->unsigned()->index()->nullable();
+            $table->foreign('competencia_id')->references('id')->on('competencia');
             $table->timestamps();
         });
     }
