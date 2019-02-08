@@ -23,6 +23,6 @@
         "sass-loader": "^7.1.0",
         "simple-line-icons": "^2.4.1",
         "vue": "^2.5.17",
-        "webpack": "^3"
+        "webpack": "^2"
     }
 }
