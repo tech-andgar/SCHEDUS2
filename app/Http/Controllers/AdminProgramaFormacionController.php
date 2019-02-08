@@ -35,7 +35,6 @@
 			$this->col[] = ["label"=>"Nombre","name"=>"name"];
 			$this->col[] = ["label"=>"Versión","name"=>"version"];
 			$this->col[] = ["label"=>"Nivel Programa Formación","name"=>"nivel_programa_formacion_id","join"=>"nivel_programa_formacion,name"];
-			$this->col[] = ["label"=>"Proyecto","name"=>"proyecto_id","join"=>"proyecto,name"];
 			$this->col[] = ["label"=>"Estado Programa Formación","name"=>"estado_programa_formacion_id","join"=>"estado_programa_formacion,name"];
 			# END COLUMNS DO NOT REMOVE THIS LINE
 
@@ -46,19 +45,18 @@
 			$this->form[] = ['label'=>'Nombre','name'=>'name','type'=>'text','validation'=>'required|string|min:3|max:70','width'=>'col-sm-10','placeholder'=>'Puedes introducir solo una letra'];
 			$this->form[] = ['label'=>'Versión','name'=>'version','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Nivel Programa Formación','name'=>'nivel_programa_formacion_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'nivel_programa_formacion,name'];
-			$this->form[] = ['label'=>'Proyecto','name'=>'proyecto_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'proyecto,name'];
-			$this->form[] = ['label'=>'Estado Programa Formación','name'=>'estado_programa_formacion_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'estado_programa_formacion,name'];
+			$this->form[] = ['label'=>'Estado Programa Formación','name'=>'estado_programa_formacion_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10'];
 			# END FORM DO NOT REMOVE THIS LINE
 
 			# OLD START FORM
 			//$this->form = [];
-			//$this->form[] = ["label"=>"Code","name"=>"code","type"=>"number","required"=>TRUE,"validation"=>"required|integer|min:0"];
-			//$this->form[] = ["label"=>"Short Name","name"=>"short_name","type"=>"text","required"=>TRUE,"validation"=>"required|min:1|max:255"];
-			//$this->form[] = ["label"=>"Name","name"=>"name","type"=>"text","required"=>TRUE,"validation"=>"required|string|min:3|max:70","placeholder"=>"Puedes introducir solo una letra"];
-			//$this->form[] = ["label"=>"Version","name"=>"version","type"=>"text","required"=>TRUE,"validation"=>"required|min:1|max:255"];
-			//$this->form[] = ["label"=>"Nivel Programa Formacion Id","name"=>"nivel_programa_formacion_id","type"=>"select2","required"=>TRUE,"validation"=>"required|integer|min:0","datatable"=>"nivel_programa_formacion,name"];
-			//$this->form[] = ["label"=>"Proyecto Id","name"=>"proyecto_id","type"=>"select2","required"=>TRUE,"validation"=>"required|integer|min:0","datatable"=>"proyecto,name"];
-			//$this->form[] = ["label"=>"Estado Programa Formacion Id","name"=>"estado_programa_formacion_id","type"=>"select2","required"=>TRUE,"validation"=>"required|integer|min:0","datatable"=>"estado_programa_formacion,name"];
+			//$this->form[] = ['label'=>'Código','name'=>'code','type'=>'number','validation'=>'required|integer|min:0','width'=>'col-sm-10'];
+			//$this->form[] = ['label'=>'Abreviatura','name'=>'short_name','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
+			//$this->form[] = ['label'=>'Nombre','name'=>'name','type'=>'text','validation'=>'required|string|min:3|max:70','width'=>'col-sm-10','placeholder'=>'Puedes introducir solo una letra'];
+			//$this->form[] = ['label'=>'Versión','name'=>'version','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
+			//$this->form[] = ['label'=>'Nivel Programa Formación','name'=>'nivel_programa_formacion_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'nivel_programa_formacion,name'];
+			//$this->form[] = ['label'=>'Proyecto','name'=>'proyecto_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'proyecto,name'];
+			//$this->form[] = ['label'=>'Estado Programa Formación','name'=>'estado_programa_formacion_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'estado_programa_formacion,name'];
 			# OLD END FORM
 
 			/* 
