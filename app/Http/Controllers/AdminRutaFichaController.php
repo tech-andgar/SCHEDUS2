@@ -45,7 +45,7 @@
 			$this->form[] = ['label'=>'Jornada','name'=>'jornada_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'jornada,name'];
 			$this->form[] = ['label'=>'Fecha Inicio','name'=>'fecha_inicio','type'=>'date','validation'=>'required|date','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Fecha Fin','name'=>'fecha_fin','type'=>'date','validation'=>'required|date','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Observaciones','name'=>'observaciones','type'=>'textarea','validation'=>'required|string|min:5|max:5000','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Observaciones','name'=>'observaciones','type'=>'textarea','validation'=>'string|min:5|max:5000','width'=>'col-sm-10'];
 			# END FORM DO NOT REMOVE THIS LINE
 
 			# OLD START FORM
