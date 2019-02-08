@@ -31,22 +31,22 @@
 			# START COLUMNS DO NOT REMOVE THIS LINE
 			$this->col = [];
 			$this->col[] = ["label"=>"Num. Ficha","name"=>"code"];
-			$this->col[] = ["label"=>"Programa Formación","name"=>"programa_formacion_id","join"=>"programa_formacion,short_name"];
+			$this->col[] = ["label"=>"Programa Formación","name"=>"programa_formacion_id","join"=>"programa_formacion,name"];	
 			$this->col[] = ["label"=>"Estado Ficha","name"=>"estado_ficha_id","join"=>"estado_ficha,name"];
 			# END COLUMNS DO NOT REMOVE THIS LINE
 
 			# START FORM DO NOT REMOVE THIS LINE
 			$this->form = [];
 			$this->form[] = ['label'=>'Num. Ficha','name'=>'code','type'=>'text','validation'=>'required|min:1|max:191','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Programa Formación','name'=>'programa_formacion_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'estado_ficha,name'];
-			$this->form[] = ['label'=>'Estado Ficha','name'=>'estado_ficha_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'programa_formacion,short_name'];
+			$this->form[] = ['label'=>'Programa Formación','name'=>'programa_formacion_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'programa_formacion,name'];
+			$this->form[] = ['label'=>'Estado Ficha','name'=>'estado_ficha_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'estado_ficha,name'];
 			# END FORM DO NOT REMOVE THIS LINE
 
 			# OLD START FORM
 			//$this->form = [];
-			//$this->form[] = ["label"=>"Code","name"=>"code","type"=>"text","required"=>TRUE,"validation"=>"required|min:1|max:255"];
-			//$this->form[] = ["label"=>"Estado Ficha Id","name"=>"estado_ficha_id","type"=>"select2","required"=>TRUE,"validation"=>"required|integer|min:0","datatable"=>"estado_ficha,name"];
-			//$this->form[] = ["label"=>"Programa Formacion Id","name"=>"programa_formacion_id","type"=>"select2","required"=>TRUE,"validation"=>"required|integer|min:0","datatable"=>"programa_formacion,short_name"];
+			//$this->form[] = ['label'=>'Num. Ficha','name'=>'code','type'=>'text','validation'=>'required|min:1|max:191','width'=>'col-sm-10'];
+			//$this->form[] = ['label'=>'Programa Formación','name'=>'programa_formacion_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'programa_formacion,name'];
+			//$this->form[] = ['label'=>'Estado Ficha','name'=>'estado_ficha_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'estado_ficha,name'];
 			# OLD END FORM
 
 			/* 
