@@ -21,7 +21,7 @@ class CreateRutaFichasTable extends Migration
             $table->foreign('jornada_id')->references('id')->on('jornada');
             $table->date('fecha_inicio');
             $table->date('fecha_fin');
-            $table->text('observaciones');
+            $table->text('observaciones')->nullable();
             $table->timestamps();
         });
     }
