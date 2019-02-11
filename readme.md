@@ -83,8 +83,11 @@ Create new environment variable for PHP command
 For this it is enough to open the properties of the system.
 
 Open Windows search or Windows 10 button
-English: "Edit system environment variables"
-Spanish: "Editar las variables de entorno del sistema"
+
+***English***: "Edit system environment variables"
+
+***Spanish***: "Editar las variables de entorno del sistema"
+
 
 ![Propiedades_sistema](docs\assets\images\Variables_entorno\01_Propiedades_del_sistema_Windows_10.png "Ventana
 de Propiedades del sistema de Windows 10")
