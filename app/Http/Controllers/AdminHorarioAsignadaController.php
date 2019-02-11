@@ -31,10 +31,9 @@
 			# START COLUMNS DO NOT REMOVE THIS LINE
 			$this->col = [];
 			$this->col[] = ["label"=>"Trimestre","name"=>"trimestre_id","join"=>"trimestre,name"];
-			$this->col[] = ["label"=>"Modo","name"=>"modo_id","join"=>"modo,name"];
 			$this->col[] = ["label"=>"Ruta Ficha","name"=>"ruta_ficha_id","join"=>"ruta_ficha,name"];
 			$this->col[] = ["label"=>"Trimestre Ficha","name"=>"trimestre_ficha"];
-			$this->col[] = ["label"=>"Resultado Aprendizaje","name"=>"resultado_aprendizaje_id","join"=>"resultado_aprendizaje,name"];
+			$this->col[] = ["label"=>"Planeacion","name"=>"planeacion_id","join"=>"planeacion,id"];
 			$this->col[] = ["label"=>"Instructor","name"=>"instructor_id","join"=>"cms_users,id"];
 			$this->col[] = ["label"=>"Dias","name"=>"dias_id","join"=>"dias,name"];
 			$this->col[] = ["label"=>"Hora inicio","name"=>"hora_inicio"];
@@ -46,31 +45,29 @@
 			# START FORM DO NOT REMOVE THIS LINE
 			$this->form = [];
 			$this->form[] = ['label'=>'Trimestre','name'=>'trimestre_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'trimestre,name'];
-			$this->form[] = ['label'=>'Modo','name'=>'modo_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'modo,name'];
-			$this->form[] = ['label'=>'Ruta Ficha','name'=>'ruta_ficha_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'ruta_ficha,name'];
+			$this->form[] = ['label'=>'Ruta Ficha','name'=>'ruta_ficha_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Trimestre Ficha','name'=>'trimestre_ficha','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Resultado Aprendizaje','name'=>'resultado_aprendizaje_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'resultado_aprendizaje,name'];
-			$this->form[] = ['label'=>'Instructor','name'=>'instructor_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'instructor,id'];
-			$this->form[] = ['label'=>'Dias','name'=>'dias_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'dias,name'];
+			$this->form[] = ['label'=>'Planeacion','name'=>'planeacion_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'planeacion,id','datatable_format'=>'planeacion.id,\' \',planeacion.actividad_proyecto_id,\' \',planeacion.resultado_aprendizaje_id'];
+			$this->form[] = ['label'=>'Instructor','name'=>'instructor_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'cms_users,name'];
+			$this->form[] = ['label'=>'Dias','name'=>'dias_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'instructor,id'];
 			$this->form[] = ['label'=>'Hora Inicio','name'=>'hora_inicio','type'=>'time','validation'=>'required|date_format:H:i:s','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Hora Fin','name'=>'hora_fin','type'=>'time','validation'=>'required|date_format:H:i:s','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Ambiente','name'=>'ambiente_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'ambiente,id'];
-			$this->form[] = ['label'=>'Estado Horario Asignada','name'=>'estado_horario_asignada_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'estado_horario_asignada,name'];
+			$this->form[] = ['label'=>'Ambiente','name'=>'ambiente_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Estado Horario Asignada','name'=>'estado_horario_asignada_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'ambiente,id'];
 			# END FORM DO NOT REMOVE THIS LINE
 
 			# OLD START FORM
 			//$this->form = [];
 			//$this->form[] = ['label'=>'Trimestre','name'=>'trimestre_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'trimestre,name'];
-			//$this->form[] = ['label'=>'Modo','name'=>'modo_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'modo,name'];
-			//$this->form[] = ['label'=>'Ruta Ficha','name'=>'ruta_ficha_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'ruta_ficha,name'];
-			//$this->form[] = ['label'=>'Trimestre Ficha','name'=>'trimestre_ficha','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
-			//$this->form[] = ['label'=>'Resultado Aprendizaje','name'=>'resultado_aprendizaje_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'resultado_aprendizaje,name'];
-			//$this->form[] = ['label'=>'Instructor','name'=>'instructor_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'instructor,id'];
-			//$this->form[] = ['label'=>'Dias','name'=>'dias_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'dias,name'];
-			//$this->form[] = ['label'=>'Hora Inicio','name'=>'hora_inicio','type'=>'time','validation'=>'required|date_format:H:i:s','width'=>'col-sm-10'];
+			//$this->form[] = ['label'=>'Ruta Ficha','name'=>'ruta_ficha_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10'];
+			//$this->form[] = ['label'=>'Trimestre Ficha','name'=>'trimestre_ficha','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10','datatable'=>'ruta_ficha,name'];
+			//$this->form[] = ['label'=>'Planeacion','name'=>'planeacion_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10'];
+			//$this->form[] = ['label'=>'Instructor','name'=>'instructor_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'planeacion.id'];
+			//$this->form[] = ['label'=>'Dias','name'=>'dias_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'instructor,id'];
+			//$this->form[] = ['label'=>'Hora Inicio','name'=>'hora_inicio','type'=>'time','validation'=>'required|date_format:H:i:s','width'=>'col-sm-10','datatable'=>'dias,name'];
 			//$this->form[] = ['label'=>'Hora Fin','name'=>'hora_fin','type'=>'time','validation'=>'required|date_format:H:i:s','width'=>'col-sm-10'];
-			//$this->form[] = ['label'=>'Ambiente','name'=>'ambiente_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'ambiente,id'];
-			//$this->form[] = ['label'=>'Estado Horario Asignada','name'=>'estado_horario_asignada_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'estado_horario_asignada,name'];
+			//$this->form[] = ['label'=>'Ambiente','name'=>'ambiente_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10'];
+			//$this->form[] = ['label'=>'Estado Horario Asignada','name'=>'estado_horario_asignada_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'ambiente,id'];
 			# OLD END FORM
 
 			/* 
