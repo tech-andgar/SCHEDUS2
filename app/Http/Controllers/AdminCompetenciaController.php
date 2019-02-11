@@ -37,10 +37,10 @@
 
 			# START FORM DO NOT REMOVE THIS LINE
 			$this->form = [];
-			$this->form[] = ['label'=>'Código','name'=>'code','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10','datatable'=>'programa_formacion,short_name'];
-			$this->form[] = ['label'=>'Nombre','name'=>'name','type'=>'text','validation'=>'required|string|min:3|max:70','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Programa Formación','name'=>'programa_formacion_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','placeholder'=>'Puedes introducir solo una letra'];
+			$this->form[] = ['label'=>'Código','name'=>'code','type'=>'text','validation'=>'min:1|max:70','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Nombre','name'=>'name','type'=>'text','validation'=>'required|string|min:3|max:191','width'=>'col-sm-10'];
 			# END FORM DO NOT REMOVE THIS LINE
+			$this->form[] = ['label'=>'Programa Formación','name'=>'programa_formacion_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'programa_formacion,name','datatable_format'=>'code,\' (\',short_name,\') \',name'];
 
 			# OLD START FORM
 			//$this->form = [];
