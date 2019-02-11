@@ -15,9 +15,9 @@ class CreateResultadoAprendizajesTable extends Migration
     {
         Schema::create('resultado_aprendizaje', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('num');
+            $table->string('num')->nullable();
             $table->string('name');
-            $table->integer('competencia_id')->unsigned()->index()->nullable();
+            $table->integer('competencia_id')->unsigned()->index();
             $table->foreign('competencia_id')->references('id')->on('competencia');
             $table->timestamps();
         });
