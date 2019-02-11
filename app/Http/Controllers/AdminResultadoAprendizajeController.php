@@ -37,15 +37,16 @@
 
 			# START FORM DO NOT REMOVE THIS LINE
 			$this->form = [];
-			$this->form[] = ['label'=>'Número','name'=>'num','type'=>'text','validation'=>'integer|min:0|max:70','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Número','name'=>'num','type'=>'text','validation'=>'string|min:0|max:70','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Nombre','name'=>'name','type'=>'text','validation'=>'required|string|min:3|max:191','width'=>'col-sm-10','placeholder'=>'Puedes introducir solo una letra'];
 			$this->form[] = ['label'=>'Competencia','name'=>'competencia_id','type'=>'select2','validation'=>'required','width'=>'col-sm-9','datatable'=>'competencia,name','datatable_format'=>'competencia.code,\' \',competencia.name'];
 			# END FORM DO NOT REMOVE THIS LINE
 
 			# OLD START FORM
 			//$this->form = [];
-			//$this->form[] = ["label"=>"Num","name"=>"num","type"=>"number","required"=>TRUE,"validation"=>"required|integer|min:0"];
-			//$this->form[] = ["label"=>"Name","name"=>"name","type"=>"text","required"=>TRUE,"validation"=>"required|string|min:3|max:70","placeholder"=>"Puedes introducir solo una letra"];
+			//$this->form[] = ['label'=>'Número','name'=>'num','type'=>'text','validation'=>'integer|min:0|max:70','width'=>'col-sm-10'];
+			//$this->form[] = ['label'=>'Nombre','name'=>'name','type'=>'text','validation'=>'required|string|min:3|max:191','width'=>'col-sm-10','placeholder'=>'Puedes introducir solo una letra'];
+			//$this->form[] = ['label'=>'Competencia','name'=>'competencia_id','type'=>'select2','validation'=>'required','width'=>'col-sm-9','datatable'=>'competencia,name','datatable_format'=>'competencia.code,\' \',competencia.name'];
 			# OLD END FORM
 
 			/* 
