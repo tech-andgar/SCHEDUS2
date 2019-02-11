@@ -38,9 +38,9 @@
 
 			# START FORM DO NOT REMOVE THIS LINE
 			$this->form = [];
-			$this->form[] = ['label'=>'Código Actividad de proyecto','name'=>'code','type'=>'text','validation'=>'required|min:1|max:191','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Nombre Actividad de proyecto','name'=>'name','type'=>'text','validation'=>'required|string|min:3|max:70','width'=>'col-sm-10','placeholder'=>'Puedes introducir solo una letra'];
-			$this->form[] = ['label'=>'Proyecto','name'=>'proyecto_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'proyecto,name'];
+			$this->form[] = ['label'=>'Código Actividad de proyecto','name'=>'code','type'=>'text','validation'=>'min:1|max:191','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Nombre Actividad de proyecto','name'=>'name','type'=>'text','validation'=>'required|string|min:3|max:191','width'=>'col-sm-10','placeholder'=>'Puedes introducir solo una letra'];
+			$this->form[] = ['label'=>'Proyecto','name'=>'proyecto_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'proyecto,name','datatable_format'=>'code,\' \',name'];
 			$this->form[] = ['label'=>'Fase','name'=>'fase_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'fase,name'];
 			# END FORM DO NOT REMOVE THIS LINE
 
