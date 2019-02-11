@@ -15,7 +15,7 @@ class CreateActividadProyectosTable extends Migration
     {
         Schema::create('actividad_proyecto', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('code', 5);
+            $table->string('code');
             $table->string('name')->unique();
             $table->integer('proyecto_id')->unsigned()->index()->nullable();
             $table->foreign('proyecto_id')->references('id')->on('proyecto');
