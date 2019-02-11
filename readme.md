@@ -1,6 +1,6 @@
 # Welcome To SCHEDUS
 
-SCHEDUS is CRUD Generator for laravel, with the most important features web application development. It's easy, flexible, and powerful.
+SCHEDUS is System management schedule of SENA.
 
 ## System Requirement and Basic Technical Knowledge
 - PHP 5.6.x <= (Recommend PHP 7.2 or higher) and the extensions:
@@ -10,36 +10,35 @@ SCHEDUS is CRUD Generator for laravel, with the most important features web appl
   - Tokenizer
   - FileInfo
 - Web Server as:
-  - Apache 2.4.x or higher with rewrite engine on (mod_rewrite) (Tested)
+  - Apache 2.4.x or higher with rewrite engine on (mod_rewrite) (Tested) (Recommend Apache 2.4.37 or higher)
   - Nginx 1.11.x or higher (No tested)
-- Database that laravel supports, actually can be:
-  - MySQL (Tested)
+- Database that schedus supports, actually can be:
+  - MariaDB (Tested)
+  - MySQL (No tested)
   - Postgres (No tested)
   - SQLite (No tested)
   - SQL Server (No tested)
 - Composer
 - Laravel 5.3 <= (Recommend Laravel 5.7 or higher)
 
-#Preparando nuestro entorno de trabajo.
-Laravel necesita un servidor web. No importa cuál sea pero la mayoría de la comunidad usa Apache o Nginx y hacer lo mismo te pondrá las cosas más fáciles a la hora de buscar ayuda si la necesitas.
+# Preparing our working environment.
+SCHEDUS needs a web server. It doesn't matter what it is but most of the community uses Apache or Nginx and doing the same will make it easier for you to get help if you need it.
 
 ## How To Install
 
-### Instalación de XAMPP (Windows - Nivel Básico)
-XAMPP es un programa que nos ofrece una distribución de Apache, MySQL, PHP y
-Perl muy simple de instalar, administrar y utilizar. Podemos descargarlo
-[aquí.](https://https://www.apachefriends.org/es/download.html)
+### Installing XAMPP (Windows - Basic Level)
+XAMPP is a program that offers us a distribution of Apache, MySQL, PHP and
+Perl very simple to install, manage and use. We can download it
+[here.](https://https://www.apachefriends.org/es/download.html)
 
-### Instalación de WAMP (Windows - Nivel Inttermedio)
-WAMP es un programa que nos ofrece una distribución de Apache, MySQL, PHP y
-Perl muy simple de instalar, administrar y utilizar. Podemos descargarlo
-[aquí.](https://https://www.apachefriends.org/es/download.html)
+### Installing WAMP (Windows - Intermediate Level)
+WampServer refers to a software stack for the Microsoft Windows operating system, created by Romain Bourdon and consisting of the Apache web server, OpenSSL for SSL support, MySQL database and PHP programming language. We can download it
+[here.](https://https://www.apachefriends.org/es/download.html)
 
 ### Instalación de LAMP (Linux)
-LAMP es el conjunto de aplicaciones Apache, MySQL, PHP o Python en entornos
-Linux que nos facilitan el desarrollo de sistemas.
+LAMP is an archetypal model of web service stacks, named as an acronym of the names of its original four open-source components: the Linux operating system, the Apache HTTP Server, the MySQL relational database management system (RDBMS), and the PHP programming language. The LAMP components are largely interchangeable and not limited to the original selection. As a solution stack, LAMP is suitable for building dynamic web sites and web applications
 
-En Ubuntu o derivadas podemos instalarlo con los siguientes comandos:
+In Ubuntu or derivatives we can install it with the following commands:
 ```shell
 $ sudo apt-get update
 $ sudo apt-get upgrade
@@ -48,17 +47,20 @@ $ sudo apt-get install php5-mcrypt
 $ sudo php5enmod mcrypt
 ```
 
-Despues de tener instalado nuestro Servidor web, es necesario instalar composer el cuál es un gestor de dependencias php muy útil y del cuál se hablará más tarde.
+After having installed our web server, it is necessary to install composer which is a very useful php dependency manager and which will be discussed later.
 
-### Instalación de composer (Windows)
-La forma más sencilla de instalar Composer en tu ordenador Windows consiste en
-[descargar](https://getcomposer.org/Composer-Setup.exe) y ejecutar el archivo
-Composer-Setup.exe, que instala la versión más reciente de Composer y actualiza
-el PATH de tu ordenador para que puedas ejecutar Composer simplemente escribiendo el comando composer.
+### Installation composer (Windows)
+The easiest way to install Composer on your Windows computer is to
+[download](https://getcomposer.org/Composer-Setup.exe) and execute the file
+Composer-Setup.exe, which installs the latest version of Composer and updates
+the PATH of your computer so that you can run Composer simply by typing the composer command.
 
+```shell
+$ composer -v
+```
 
-Instalación de composer (Linux)
-En ubuntu bastará con ejecutar los siguientes comandos en la terminal.
+### Installation composer (Linux)
+In ubuntu it will be enough to execute the following commands in the terminal.
 ```shell
 $ sudo apt-get install curl
 $ curl -sS https://getcomposer.org/installer | php
@@ -80,28 +82,28 @@ if have installed PHP, but no working this command. Need configure variable
 Create new environment variable for PHP command
 For this it is enough to open the properties of the system.
 
-Abra busqueda de Windows o botón Windows 10
-"Editar las variables de entorno del sistema"
+Open Windows search or Windows 10 button
+English: "Edit system environment variables"
+Spanish: "Editar las variables de entorno del sistema"
 
 ![Propiedades_sistema](docs\assets\images\Variables_entorno\01_Propiedades_del_sistema_Windows_10.png "Ventana
 de Propiedades del sistema de Windows 10")
 
-Ventana de "Propiedades del sistema" de Windows 10
+Windows 10 "System Properties" dialog window
 
 
-y encontrar dentro de la ventana el botón "Variables de entorno".
-
+and find within the window the button "Environment Variables".
 
 
 ![Variables_entorno](docs\assets\images\Variables_entorno\02_Variables_de_entorno_Windows_10.png "Ventana de Variables
 de entorno de Windows 10")
 
-Ventana de "Variables de entorno" de Windows 10
+Windows 10 "Environment Variables" dialog window
 
 
-Una vez dentro de esta ventana basta con editar la variable de sistema llamada
-Path y agregaremos anteponiendo un símbolo punto y coma (;) al valor de la
-variable.
+Once inside this window it is enough to edit the system variable called
+Path and add a semicolon symbol (;) to the value of the
+variable
 
 ![Variables_entorno](./docs/assets/images/Variables_de_entorno_Windows_10.png "Ventana de Variables
 de entorno de Windows 10")
@@ -110,9 +112,8 @@ de entorno de Windows 10")
 "Ventana de Editar Variables de entorno de Windows 10")
 
 
-
-Ventana "Editar la variable del sistema" de Windows 10 editando la variable
-"Path"
+Windows 10 "Edit the system variable" window by editing the variable
+"Path.
 
 
 ![Buscar_carpeta_variables_entorno](docs\assets\images\Variables_entorno\04_Buscar_carpeta_ruta_php_7.3.1_Windows_10.png
@@ -122,19 +123,18 @@ Ventana "Editar la variable del sistema" de Windows 10 editando la variable
 ![Marcar_carpeta_PHP_variables_entorno](docs\assets\images\Variables_entorno\05_Editar_variable_de_entorno_PHP7.3_Windows_10.png
 "Ventana de Marcar carpeta PHP de Windows 10")
 
-y marcando el texto "C:\wamp64\bin\php\php7.3.1".
+and marking the text "C:\wamp64\bin\php\php7.3.1".
 
 
 
-Finalmente podemos probar nuestro comando instalado usando el comando "php -i"
-en nuestro terminal (cmd).
+Finally we can test our installed command using the command in our terminal (cmd).
 ```shell
 $ php -i
 ```
 
-> De la misma manera en que podemos crear una variable de entorno para php, es
-> que podemos hacerlo para múltiples programas como puede ser mysql, node,
-> mongodb y otros software de nuestro interés.
+> In the same way that we can create an environment variable for php, it is
+> that we can do it for multiple programs such as mysql, node,
+> mongodb and other software of our interest.
 
 ---
 
@@ -206,7 +206,7 @@ $php artisan key:generate
 ```php
 /admin/login
 ```
-- default email : admin@SCHEDUS.com
+- default email : schedus@gmail.com
 - default password : 123456
 
 ## What's Next
@@ -216,40 +216,40 @@ $php artisan key:generate
 - [Back To Index](./index.md)
 
 
-# Crear Modelo/Tabla desde consola ARTISAN
+# Create Model/Table from ARTISAN console
 
 ```php
 php artisan make:model Models/Nombre_tabla -m
 ```
-parametro -m:
-crear automaticamente un archivo de migracion para DB
+parameter -m:
+automatically create a migration file for DB
 
-crear 2 archivos son:
-- Model/Nombre_tabla.php
-- database/migrations/yyyy_mm_ddhhmm_create_nombreTabla_table.php
+create 2 files are:
+- Model/Name_Table.php
+- database/migrations/yyyy_mm_ddhhmm_create_nameTable.php
 
 
-Con el comando es **deshacer la última migración ejecutada** y registrada en la
-base de datos.
+With the command is **undo the last migration executed** and recorded in the
+database.
 ```php
 php artisan migrate:rollback
 ```
 
-Con el comando es **deshacer todas** las migraciones de la base de datos.
+With the command is ** Undo all** database migrations.
 ```php
 php artisan migrate:reset
 ```
 
-Un comando extra que nos permite **actualizar las migraciones** es el comando, el
-cual es equivalente a usar php artisan migrate:reset y después php artisan migrate.
+An extra command that allows us to **update the migrations** is the command, the
+which is equivalent to using php artisan migrate:reset and then php artisan migrate.
 ```php
 php artisan migrate:refresh
 ```
 
 
-## Soluciones típicas por fallas comunes
+## Typical solutions for common faults
 
-###Laravel 5 clear cache from route, view, config and all cache data from application
+### Laravel 5 clear cache from route, view, config and all cache data from application
 
 Reoptimized class loader:
 
