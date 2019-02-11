@@ -39,8 +39,8 @@
 
 			# START FORM DO NOT REMOVE THIS LINE
 			$this->form = [];
-			$this->form[] = ['label'=>'Actividad Proyecto','name'=>'actividad_proyecto_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'actividad_proyecto,name'];
-			$this->form[] = ['label'=>'Resultado Aprendizaje','name'=>'resultado_aprendizaje_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'resultado_aprendizaje,name'];
+			$this->form[] = ['label'=>'Actividad Proyecto','name'=>'actividad_proyecto_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'actividad_proyecto,name','datatable_format'=>'actividad_proyecto.code,\' \',actividad_proyecto.name'];
+			$this->form[] = ['label'=>'Resultado Aprendizaje','name'=>'resultado_aprendizaje_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'resultado_aprendizaje,name', 'datatable_format'=>'resultado_aprendizaje.num,\' \',resultado_aprendizaje.name'];
 			$this->form[] = ['label'=>'Jornada','name'=>'jornada_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'jornada,name'];
 			$this->form[] = ['label'=>'Trimestre','name'=>'trimestre','type'=>'number','validation'=>'required|integer|min:0','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Modo','name'=>'modo_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'modo,name'];
