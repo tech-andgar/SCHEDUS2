@@ -94,9 +94,14 @@ h6 {
   border: 2px solid #EC7C38;
 }
 
-/* .botton_css {
+.app-header,
+.app-body,
+.app-footer,
+.main
+{
+    margin-left:0 !important;
+}
 
-} */
 
 /* ExtraSmall devices (landscape phones, 544px and up) */
 
