@@ -15,7 +15,7 @@
     <!-- FAVICON -->
     <link rel="icon" type="image/webp" sizes="32x32" href="{{ asset('images/favicon-32x32.webp') }}">
 
-    <!-- Icons-->
+    {{-- <!-- Icons--> --}}
     {{-- <link rel="stylesheet" href="{{ asset('css/coreui/coreui-icons.min.css') }}"> --}}
     {{-- <link rel="stylesheet" href="{{ asset('css/flag-icon-css/css/flag-icon.min.css') }}"> --}}
     {{-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha256-NuCn4IvuZXdBaFKJOAcsU2Q3ZpwbdFisd5dux4jkQ5w=" crossorigin="anonymous" /> --}}
@@ -27,23 +27,17 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     {{-- <link rel="stylesheet" href="{{ asset('css/coreui/pace.min.css') }}"> --}}
 
-    <!-- PERSONALIZADO CSS  -->
-    {{-- <link rel="stylesheet" href="{{ asset('css/style.css') }}"> --}}
-
     <!-- SCRIPTS -->
-    <!-- CoreUI and necessary plugins-->
+    {{-- <!-- CoreUI and necessary plugins--> --}}
     <script defer src="{{ asset('js/app.js') }}"></script>
-    <!-- Plugins and scripts required by all views -->
+    {{-- <!-- Plugins and scripts required by all views --> --}}
     {{-- <script defer src="{{ asset('js/coreui/perfect-scrollbar.min.js') }}"></script> --}}
     {{-- <script defer src="{{ asset('js/coreui/coreui.min.js') }}"></script> --}}
-    <!-- Plugins and scripts required by this view-->
+    {{-- <!-- Plugins and scripts required by this view--> --}}
     {{-- <script defer src="{{ asset('js/coreui/Chart.min.js') }}"></script> --}}
     {{-- <script defer src="{{ asset('js/coreui/custom-tooltips.min.js') }}"></script> --}}
     {{-- <script defer src="{{ asset('js/coreui/main.js') }}"></script> --}}
     {{-- <script defer src="{{ asset('js/coreui/pace.min.js') }}"></script> --}}
-    </script>
-
-
 </head>
 
 <body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
@@ -90,22 +84,16 @@
             </div>
         </div>
     </div>
-    </div>
-    </div>
     <!-- Fin ejemplo de tabla Listado -->
-    </div>
 </main>
 <!-- /Fin del contenido principal -->
-</div>
 
-
-    <!-- FOOTER -->
-    <footer class="app-footer">
-        <span><a href="#">SCHEDUS</a> &copy; 2019</span>
-        <span class="ml-auto mr-2">Desarrollado por <a href="https://github.com/andgar2010">Andres Garcia</a></span>&amp;&nbsp;&nbsp;<span class="my-auto"><a href="https://github.com/johannbulls">Johann Amaya</a></span>
-    </footer>
-    <!-- END FOOTER -->
-
+<!-- FOOTER -->
+<footer class="app-footer">
+    <span><a href="#">SCHEDUS</a> &copy; 2019</span>
+    <span class="ml-auto mr-2">Desarrollado por <a href="https://github.com/andgar2010">Andres Garcia</a></span>&amp;&nbsp;&nbsp;<span class="my-auto"><a href="https://github.com/johannbulls">Johann Amaya</a></span>
+</footer>
+<!-- END FOOTER -->
 
 </body>
 <!-- END BODY -->
