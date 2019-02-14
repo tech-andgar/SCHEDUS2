@@ -2,6 +2,8 @@
 <!DOCTYPE html>
 <html lang="es">
 
+
+
 <head>
     <title>Horario de formación</title>
     <meta charset="utf-8">
@@ -15,7 +17,23 @@
     <!-- FAVICON -->
     <link rel="icon" type="image/webp" sizes="32x32" href="{{ asset('images/favicon-32x32.webp') }}">
 
-    {{-- <!-- Icons--> --}}
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+
+
+    <!-- SCRIPTS -->
+    <!-- CoreUI and necessary plugins-->
+    <script src="./assets/js/coreui/jquery.min.js"></script>
+    <script src="./assets/js/coreui/popper.min.js"></script>
+    <script src="./assets/js/coreui/bootstrap.min.js"></script>
+    <!-- Plugins and scripts required by all views -->
+    <script src="./assets/js/coreui/pace.min.js"></script>
+    <script src="./assets/js/coreui/perfect-scrollbar.min.js"></script>
+    <script src="./assets/js/coreui/coreui.min.js"></script> <!-- Plugins and scripts required by this view-->
+    <script src="./assets/js/coreui/Chart.min.js"></script>
+    <script src="./assets/js/coreui/custom-tooltips.min.js"></script>
+    <script src="./assets/js/coreui/main.js"></script>
+
+
     {{-- <link rel="stylesheet" href="{{ asset('css/coreui/coreui-icons.min.css') }}"> --}}
     {{-- <link rel="stylesheet" href="{{ asset('css/flag-icon-css/css/flag-icon.min.css') }}"> --}}
     {{-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha256-NuCn4IvuZXdBaFKJOAcsU2Q3ZpwbdFisd5dux4jkQ5w=" crossorigin="anonymous" /> --}}
@@ -24,12 +42,12 @@
     {{-- <link rel="stylesheet" type="text/css" href="https://cdn.materialdesignicons.com/2.8.94/css/materialdesignicons.min.css"> --}}
 
     <!-- Main styles for this application-->
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    {{-- <link rel="stylesheet" href="{{ asset('css/app.css') }}"> --}}
     {{-- <link rel="stylesheet" href="{{ asset('css/coreui/pace.min.css') }}"> --}}
 
     <!-- SCRIPTS -->
     {{-- <!-- CoreUI and necessary plugins--> --}}
-    <script defer src="{{ asset('js/app.js') }}"></script>
+    {{-- <script defer src="{{ asset('js/app.js') }}"></script> --}}
     {{-- <!-- Plugins and scripts required by all views --> --}}
     {{-- <script defer src="{{ asset('js/coreui/perfect-scrollbar.min.js') }}"></script> --}}
     {{-- <script defer src="{{ asset('js/coreui/coreui.min.js') }}"></script> --}}
@@ -87,8 +105,8 @@
 </main>
 <!-- /Fin del contenido principal -->
 
-<!-- FOOTER -->
-<footer class="app-footer">
+ <!-- FOOTER -->
+ <footer class="app-footer" style="margin-left:0;">
     <span><a href="#">SCHEDUS</a> &copy; 2019</span>
     <span class="ml-auto mr-2">Desarrollado por <a href="https://github.com/andgar2010">Andres Garcia</a></span>&amp;&nbsp;&nbsp;<span class="my-auto"><a href="https://github.com/johannbulls">Johann Amaya</a></span>
 </footer>

@@ -10,6 +10,7 @@
         "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
     },
     "devDependencies": {
+        "@babel/core": "^7.2.2",
         "@coreui/coreui": "^2.1.6",
         "@coreui/coreui-plugin-chartjs-custom-tooltips": "1.2.0",
         "@coreui/icons": "0.3.0",
@@ -27,6 +28,7 @@
         "node": "11.9.0",
         "node-sass": "^4.11.0",
         "pace": "0.0.4",
+        "pace-js": "^1.0.2",
         "pace-progress": "1.0.2",
         "perfect-scrollbar": "^1.4.0",
         "popper.js": "^1.12",
