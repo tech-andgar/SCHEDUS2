@@ -16,3 +16,7 @@ mix.js('resources/js/app.js', 'public/js')
 
 mix.js('resources/js/bootstrap3.js', 'public/js')
    .sass('resources/sass/bootstrap3.scss', 'public/css');
+
+mix.browserSync({
+    proxy: '127.0.0.1:8000'
+})
