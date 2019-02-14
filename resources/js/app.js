@@ -5,7 +5,13 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
+require('jquery');
+require('popper.js');
 require('./bootstrap');
+// require('pace');
+// require('perfect-scrollbar');
+// require('@coreui/coreui');
+// require('chart.js');
 
 window.Vue = require('vue');
 
