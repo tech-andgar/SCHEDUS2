@@ -75,8 +75,7 @@
                                         </button>
                                     </div>
                                 </div>
-                                <small id="helpId" class="form-text text-muted">Ingresa su numero de ficha para buscar
-                                    horario asignado</small>
+                                <small id="helpId" class="form-text text-muted">Ingresa su numero de ficha para buscar horario asignado</small>
                             </form>
                         </div>
                     </div>
