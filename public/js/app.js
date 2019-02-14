@@ -36678,10 +36678,10 @@ if (token) {
 
 /***/ }),
 
-/***/ "./resources/sass/bootstrap3.scss":
-/*!****************************************!*\
-  !*** ./resources/sass/bootstrap3.scss ***!
-  \****************************************/
+/***/ "./resources/sass/bootstrap3/app.scss":
+/*!********************************************!*\
+  !*** ./resources/sass/bootstrap3/app.scss ***!
+  \********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -36690,15 +36690,15 @@ if (token) {
 /***/ }),
 
 /***/ 0:
-/*!**********************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/bootstrap3.scss ***!
-  \**********************************************************************************************/
+/*!**************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/bootstrap3/app.scss ***!
+  \**************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! C:\wamp64\www\SCHEDUS2\resources\js\app.js */"./resources/js/app.js");
 __webpack_require__(/*! C:\wamp64\www\SCHEDUS2\resources\sass\app.scss */"./resources/sass/app.scss");
-module.exports = __webpack_require__(/*! C:\wamp64\www\SCHEDUS2\resources\sass\bootstrap3.scss */"./resources/sass/bootstrap3.scss");
+module.exports = __webpack_require__(/*! C:\wamp64\www\SCHEDUS2\resources\sass\bootstrap3\app.scss */"./resources/sass/bootstrap3/app.scss");
 
 
 /***/ })

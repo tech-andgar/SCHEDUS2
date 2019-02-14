@@ -10672,12 +10672,6 @@ a {
   font-family: "Exo 2", sans-serif;
 }
 
-br {
-  content: " ";
-  margin: 5%;
-  display: block;
-}
-
 #textbox-search:hover {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
 }
@@ -10696,19 +10690,6 @@ h6 {
   font-family: "Exo 2", sans-serif;
   font-weight: 500;
   line-height: auto;
-}
-
-.adsi-css {
-  box-sizing: content-box;
-  padding: 10px 23px 10px 24px;
-  border: 0 solid #b7b7b7;
-  border-bottom-width: 1px;
-  border-radius: 53px;
-  font: normal 16px/normal "Exo 2", sans-serif;
-  color: black;
-  text-overflow: clip;
-  height: 20px;
-  width: 15rem;
 }
 
 .btn-rounded {
@@ -10730,66 +10711,6 @@ h6 {
 .btn-rounded:hover {
   background-color: #fff;
   color: black;
-  border: 2px solid #EC7C38;
-}
-
-/* ExtraSmall devices (landscape phones, 544px and up) */
-
-@media (min-width: 0px) {
-  h2 {
-    font-size: 1.2rem;
-  }
-}
-
-/* Small devices (landscape phones, 544px and up) */
-
-@media (min-width: 544px) {
-  h2 {
-    font-size: 1.4rem;
-  }
-
-  .table {
-    width: 88%;
-    float: none;
-  }
-}
-
-/* Medium devices (tablets, 768px and up) */
-
-@media (min-width: 768px) {
-  h2 {
-    font-size: 2rem;
-  }
-
-  .table {
-    width: 88%;
-    float: none;
-  }
-}
-
-/* Large devices (desktops, 992px and up) */
-
-@media (min-width: 992px) {
-  h2 {
-    font-size: 2rem;
-  }
-
-  .table {
-    width: 88%;
-    float: none;
-  }
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-
-@media (min-width: 1200px) {
-  h2 {
-    font-size: 2rem;
-  }
-
-  .table {
-    width: 88%;
-    float: none;
-  }
+  border: 2px solid #ec7c38;
 }
 
