@@ -1,7 +1,7 @@
 
 try {
-    require('jquery');
-    require('popper.js');
+    //require('jquery');
+    //require('popper.js');
     require('@coreui/coreui');
     require('pace');
     require('perfect-scrollbar');

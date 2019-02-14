@@ -6,7 +6,7 @@
  */
 
 require('./bootstrap');
-//require('./coreui');
+require('./coreui');
 
 
 //window.Vue = require('vue');
