@@ -19,32 +19,28 @@
     {{-- <link rel="stylesheet" href="{{ asset('css/coreui/coreui-icons.min.css') }}"> --}}
     {{-- <link rel="stylesheet" href="{{ asset('css/flag-icon-css/css/flag-icon.min.css') }}"> --}}
     {{-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha256-NuCn4IvuZXdBaFKJOAcsU2Q3ZpwbdFisd5dux4jkQ5w=" crossorigin="anonymous" /> --}}
-    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    {{-- <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"> --}}
     {{-- <link rel="stylesheet" href="{{ asset('css/simple-line-icons.min.css') }}"> --}}
     {{-- <link rel="stylesheet" type="text/css" href="https://cdn.materialdesignicons.com/2.8.94/css/materialdesignicons.min.css"> --}}
 
     <!-- Main styles for this application-->
-    <link rel="stylesheet" href="{{ asset('css/coreui/coreui_style.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/coreui/pace.min.css') }}">
-    <!-- WebFonts -->
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Exo+2">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    {{-- <link rel="stylesheet" href="{{ asset('css/coreui/pace.min.css') }}"> --}}
 
     <!-- PERSONALIZADO CSS  -->
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    {{-- <link rel="stylesheet" href="{{ asset('css/style.css') }}"> --}}
 
     <!-- SCRIPTS -->
     <!-- CoreUI and necessary plugins-->
-    <script defer src="{{ asset('js/coreui/jquery.min.js') }}"></script>
-    <script defer src="{{ asset('js/coreui/popper.min.js') }}"></script>
-    <script defer src="{{ asset('js/coreui/bootstrap.min.js') }}"></script>
+    <script defer src="{{ asset('js/app.js') }}"></script>
     <!-- Plugins and scripts required by all views -->
-    <script defer src="{{ asset('js/coreui/perfect-scrollbar.min.js') }}"></script>
-    <script defer src="{{ asset('js/coreui/coreui.min.js') }}"></script>
+    {{-- <script defer src="{{ asset('js/coreui/perfect-scrollbar.min.js') }}"></script> --}}
+    {{-- <script defer src="{{ asset('js/coreui/coreui.min.js') }}"></script> --}}
     <!-- Plugins and scripts required by this view-->
     {{-- <script defer src="{{ asset('js/coreui/Chart.min.js') }}"></script> --}}
-    <script defer src="{{ asset('js/coreui/custom-tooltips.min.js') }}"></script>
+    {{-- <script defer src="{{ asset('js/coreui/custom-tooltips.min.js') }}"></script> --}}
     {{-- <script defer src="{{ asset('js/coreui/main.js') }}"></script> --}}
-    <script defer src="{{ asset('js/coreui/pace.min.js') }}"></script>
+    {{-- <script defer src="{{ asset('js/coreui/pace.min.js') }}"></script> --}}
     </script>
 
 
@@ -72,7 +68,7 @@
                 <section class="bg-light">
                     <div class="row">
                         <div class="col-md-12">
-                            <h2 class="text-center p-5">HORARIO DE FORMACION E INFORMACION PARA APRENDICES CEET</h2>
+                            <h2 class="text-center p-5">HORARIO DE FORMACIÓN CEET</h2>
                         </div>
                         <div class="col-12 d-flex justify-content-center text-center p-5">
                             <form action="#" method="post">
