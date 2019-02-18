@@ -58,7 +58,12 @@
                             <p>
                                 {{ CRUDBooster::myName() }}
                                 <small>{{ CRUDBooster::myPrivilegeName() }}</small>
-                                <small><em><?php echo date('d F Y')?></em></small>
+                                <small><em>
+                                    <?php
+                                    setlocale(LC_ALL,"es_ES.UTF-8");
+                                    echo strftime("%A %d de %B del %Y");
+                                    //echo date('d F Y');
+                                    ?></em></small>
                             </p>
                         </li>
 
