@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('home');
 });
+
+Route::get('events', 'EventController@index')->name('events.index');
+Route::post('events', 'EventController@addEvent')->name('events.add');
