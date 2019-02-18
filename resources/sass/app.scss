@@ -10,7 +10,7 @@
 //--------
 
 // CoreUI Icons
-@import 'node_modules/@coreui/icons/scss/coreui-icons';
+@import '~@coreui/icons/scss/coreui-icons';
 
 // Flag Icons CSS
 //@import 'node_modules/flag-icon-css/css/flag-icon.min';
@@ -38,15 +38,11 @@
 // Bootstrap 4
 //@import '~bootstrap/scss/bootstrap';
 
-//CoreUI
-//@import "node_modules/@coreui/coreui/scss/coreui";
+// CoreUI
+@import "~@coreui/coreui/scss/coreui";
 
-/*
-    <!-- Main styles for this application-->
-    <link rel="stylesheet" type="text/css" href="./assets/css/coreui/coreui_style.min.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/coreui/pace.min.css" >
- */
-
+// Pace
+@import "~pace-progress/themes/blue/pace-theme-barber-shop.css";
 
 // Customize
 @import './customize.scss';

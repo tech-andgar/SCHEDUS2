@@ -1,9 +1,7 @@
 
 try {
-    //require('jquery');
-    //require('popper.js');
-    require('@coreui/coreui');
-    require('pace');
+    require('pace-js');
     require('perfect-scrollbar');
-    require('chart.js');
+    require('@coreui/coreui');
+    require('chart.js/src');
 } catch (e) {}
