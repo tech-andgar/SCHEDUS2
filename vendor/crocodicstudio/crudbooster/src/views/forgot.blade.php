@@ -59,7 +59,7 @@
         <form action="{{ route('postForgot') }}" method="post">
             <input type="hidden" name="_token" value="{{ csrf_token() }}"/>
             <div class="form-group has-feedback">
-                <input type="email" class="form-control" name='email' required placeholder="Email Address"/>
+                <input type="email" class="form-control" name='email' required placeholder="Dirección de correo electrónico"/>
                 <span class="glyphicon glyphicon-user form-control-feedback"></span>
             </div>
             <div class="row">
