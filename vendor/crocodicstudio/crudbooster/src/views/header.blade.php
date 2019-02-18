@@ -2,7 +2,18 @@
 <header class="main-header">
 
     <!-- Logo -->
-    <a href="{{url(config('crudbooster.ADMIN_PATH'))}}" title='{{Session::get('appname')}}' class="logo">{{CRUDBooster::getSetting('appname')}}</a>
+    <a href="{{url(config('crudbooster.ADMIN_PATH'))}}" title='{{Session::get('appname')}}' class="logo">
+        <span class="logo-mini">
+            <img title='SCHEDUS'
+            src='{{ asset('images\Logo_SENA_Sliver.png') }}'
+            style='max-width: 100%;max-height:170px'/>
+        </span>
+        <span class="logo-lg">
+            <img title='{!!(Session::get('appname') == 'CRUDBooster')?"<b>CRUD</b>Booster":CRUDBooster::getSetting('appname')!!}'
+            src='{{ CRUDBooster::getSetting("logo")?asset(CRUDBooster::getSetting('logo')):asset('vendor/crudbooster/assets/Logo_SCHEDUS.svg') }}'
+            style='max-width: 80%;max-height:120px'/>
+        </span>
+    </a>
 
     <!-- Header Navbar -->
     <nav class="navbar navbar-static-top" role="navigation">
