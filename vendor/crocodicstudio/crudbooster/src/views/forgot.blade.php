@@ -43,7 +43,7 @@
     <div class="login-logo">
         <a href="{{url('/')}}">
             <img title='{!!($appname == 'CRUDBooster')?"<b>CRUD</b>Booster":$appname!!}'
-                 src='{{ CRUDBooster::getSetting("logo")?asset(CRUDBooster::getSetting('logo')):asset('vendor/crudbooster/assets/logo_crudbooster.png') }}'
+                 src='{{ CRUDBooster::getSetting("logo")?asset(CRUDBooster::getSetting('logo')):asset('vendor/crudbooster/assets/Logo_SCHEDUS.png') }}'
                  style='max-width: 100%;max-height:170px'/>
         </a>
     </div><!-- /.login-logo -->
