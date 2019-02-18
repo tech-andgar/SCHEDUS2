@@ -55,19 +55,8 @@ a {
     font-family: $font-family-sans-serif;
 }
 
-//br {
-//    content: " ";
-//    margin: 5%;
-//    display: block;
-//}
-
 #textbox-search:hover {
     box-shadow: 0 5px 20px rgba(0, 0, 0, .5);
-}
-
-
-#box-search {
-    padding: 10% 0;
 }
 
 h1,
@@ -80,35 +69,4 @@ h6 {
     font-family: "Exo 2", sans-serif;
     font-weight: 500;
     line-height: auto;
-}
-
-
-
-.btn-rounded {
-    background: $navbar-default-bg;
-    border: 1px solid rgba(145, 59, 10, 1);
-    display: inline-block;
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-    cursor: pointer;
-    padding: 10px 20px;
-    -webkit-border-radius: 50px;
-    border-radius: 50px;
-    font: normal 16px / normal "Exo 2", sans-serif;
-    color: rgba(255, 255, 255, 0.9);
-    -o-text-overflow: clip;
-    text-overflow: clip;
-    -webkit-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
-    -moz-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
-    -o-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
-    transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
-    text-align: center;
-    text-decoration: none;
-}
-
-.btn-rounded:hover {
-    background-color: #fff;
-    color: black;
-    border: 2px solid $navbar-default-bg;
 }
