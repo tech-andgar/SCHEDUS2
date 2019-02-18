@@ -58,4 +58,4 @@
 </script>
 <script src="{{asset('vendor/crudbooster/assets/js/main.js').'?r='.time()}}"></script>
 
-	
+
