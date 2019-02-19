@@ -1,6 +1,6 @@
 <?php
 return [
-    'emaill_footer' => 'No respondas a este mensaje, es un mensaje generado automáticamente.',
+    'email_footer' => 'No respondas a este mensaje, es un mensaje generado automáticamente.',
     'login_message' => 'Por favor, inicia sesión para comenzar',
     'text_forgot_password' => '¿Olvidaste tu contraseña?',
     'page_title_login' => 'Inicio de sesión',
@@ -11,6 +11,8 @@ return [
     'text_view_all_notification' => 'Ver todas',
     'label_button_profile' => "Perfil",
     'filter_dialog_title' => 'Filtros y búsquedas avanzadas',
+    'there_is_no_option' => 'No hay ninguna opción de configuración para este tipo de entrada',
+    'no' => 'No.',
     'text_enter_the_password' => 'Introduce la contraseña para volver a la sesión',
     'text_or_sign_in' => 'O inicia sesión con otro usuario',
     'text_default_add_new_module' => 'Añadir nuevo :module',
@@ -22,13 +24,13 @@ return [
     'text_default_help_text' => 'Puedes introducir solo una letra',
     'text_default_help_url' => 'Introduce una dirección web (URL) válida',
     'text_dashboard' => 'Escritorio',
+    'text_delete' => 'Eliminar',
     'text_prefix_option' => '** Selecciona un',
     'text_loading' => 'Espera un segundo, por favor. Cargando...',
     'message_after_logout' => '¡Gracias por la visita, nos vemos pronto!',
     'message_forgot_password' => 'Te hemos enviado una nueva contraseña. Revisa tu correo electrónico. ¡Puede estar en la carpeta de spam!',
     'page_not_found' => 'Vaya, esta página no existe o no tienes acceso.',
     'page_not_found_text' => 'No encontramos la página que nos pides.',
-
     'page_not_found_tips' => '* Asegúrate que la dirección es la correcta<br/>
                 * Recuerda que el sistema distingue entre mayúsculas y minúsculas<br/>
                 * Consulta con el administrador, puede que haya eliminado esta página<br/>
@@ -70,27 +72,20 @@ return [
     'alert_error_ajax' => 'Parece que tenemos problemas en el sistema, vamos a intentar corregirlo lo antes posible !',
     'alert_validation_error' => 'Rellena el formulario correctamente : :error',
     'alert_select_a_data' => 'Por favor, seleccione al menos un registro',
-
     'add_data_page_title' => 'Añadir :module',
     'edit_data_page_title' => 'Editar :module',
     'button_add_to_table' => 'Agregar a la Tabla',
-
     'detail_data_page_title' => 'Detalles :module',
-
     'default_module_description' => 'Listado',
-
     'delete_description_confirm' => "No podrás recuperar estos datos!",
     'delete_title_confirm' => "Estás Seguro?",
-
     'action_show_data' => 'Mostrar',
     'action_add_data' => 'Añadir',
     'action_delete_selected' => 'Elimina los seleccionados',
-
     'action_label' => 'Acción',
     'action_detail_data' => 'Detalles',
     'action_edit_data' => 'Editar',
     'action_delete_data' => 'Eliminar',
-
     'button_cancel' => 'Cancelar',
     'button_add' => 'Añadir',
     'button_edit' => 'Editar',
@@ -181,6 +176,7 @@ return [
     'login_register_style' => 'Estilo de página de registro',
     'email_setting' => 'Ajustes de Correo',
     'application_setting' => 'Ajustes de Aplicaciones',
+
     // table filter & sort 
     'filter_select_operator_type' => 'Selecciona el tipo de operador',
     'filter_ascending' => 'Ascendentemente',
@@ -215,6 +211,11 @@ return [
     'chose_an_image' => 'Elige una imagen ',
     'chose_an_file' => 'Elige un fichero ',
 
+    //action confirmation
+    'confirmation_title' => 'Confirmación',
+    'confirmation_text' => '¿Está seguro que desea realizar esta acción?',
+    'confirmButtonText' => 'Si',
+
     // privilege
     'privileges_name' => 'Nombre del Privilegio',
     'privileges_super_admin' => 'Super Admin',
@@ -239,9 +240,6 @@ return [
     'datamodal_enter_to_search' => 'Enter para buscar',
     'datamodal_browse_data' => 'Escoger Dato',
 
-    //action confirmation
-    'confirmation_title' => 'Confirmación',
-    'confirmation_text' => '¿Está seguro que desea realizar esta acción?',
 
     'datamodal_browse_file' => 'Escoger Archivo',
 
