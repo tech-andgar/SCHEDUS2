@@ -8,9 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
-        crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/500.css') }}">
 </head>
 
@@ -20,7 +18,7 @@
             <div id="wrapper">
                 <div class="content">
                 <picture>
-                    <img class="img-fluid"src="{{ asset('/svg/Plantilla_Blog_naranjaceet.png') }}" alt="Image">                    
+                    <img class="img-fluid"src="{{ asset('/svg/Plantilla_Blog_naranjaceet.png') }}" alt="Image">
                     <source media="(max-width: 799px)" srcset="{{ asset('/svg/Logo_SCHEDUS.svg') }}">
                     <source media="(min-width: 800px)" srcset="{{ asset('/svg/Logo_SCHEDUS.svg') }}">
                 </picture>
@@ -49,11 +47,9 @@
                     <!--
                     <h5>Estamos haciendo un breve mantenimiento programado.</h5>
                     -->
-                    <br>
-                    <p>
-                        Disculpe las molestias.
-                        <br> Estaremos de vuelta en marcha tan rápido como sea posible.
-                    </p>
+                    <p>&nbsp;</p>
+                    <p>Disculpe las molestias.</p>
+                    <p>Estaremos de vuelta en marcha tan rápido como sea posible.</p>
                 </div>
             </div>
 

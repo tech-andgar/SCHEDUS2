@@ -1,174 +1,48 @@
-// Fonts
+//--------
+// FONTS
+//--------
 @import url('https://fonts.googleapis.com/css?family=Days+One');
 @import url('https://fonts.googleapis.com/css?family=Exo+2');
+
+
+//--------
+// ICONS
+//--------
+
+// CoreUI Icons
+@import '~@coreui/icons/scss/coreui-icons';
+
+// Flag Icons CSS
+//@import 'node_modules/flag-icon-css/css/flag-icon.min';
+
+// FontAwesome 5
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+
+// Font Awesome 4
+//@import '';
+
+// Simple Line Icons
+//@import 'node_modules/simple-line-icons/css/simple-line-icons';
+
+// Material Design Icons
+//@import '';
+
+
+//------
+// CSS
+//------
 
 // Variables
 //@import 'variables';
 
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
-@import '~@fortawesome/fontawesome-free/css/all.min.css';
+// Bootstrap 4
+//@import '~bootstrap/scss/bootstrap';
 
+// CoreUI
+@import "~@coreui/coreui/scss/coreui";
 
-//CoreUI
-// @import "node_modules/@coreui/coreui/scss/coreui";
-//@import '~@fortawesome/fontawesome-free/scss/fontawesome';
-
-// @import 'node_modules/@coreui/icons/scss/coreui-icons';
-// @import 'node_modules/flag-icon-css/css/flag-icon.min';
-// @import 'node_modules/font-awesome/css/font-awesome.min';
-// @import 'node_modules/simple-line-icons/css/simple-line-icons';
-
+// Pace
+@import "~pace-progress/themes/blue/pace-theme-barber-shop.css";
 
 // Customize
-.app-header {
-    background-color: #ec7c38;
-}
-
-.navbar-nav .nav-link {
-    color: #fff;
-}
-
-.app-header .navbar-toggler-icon {
-    height: 23px;
-
-    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMzJweCIgaGVpZ2h0PSIzMnB4IiB2aWV3Qm94PSIwIDAgMzIgMzIiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik00LDEwaDI0YzEuMTA0LDAsMi0wLjg5NiwyLTJzLTAuODk2LTItMi0ySDRDMi44OTYsNiwyLDYuODk2LDIsOFMyLjg5NiwxMCw0LDEweiBNMjgsMTRINA0KCWMtMS4xMDQsMC0yLDAuODk2LTIsMmMwLDEuMTA0LDAuODk2LDIsMiwyaDI0YzEuMTA0LDAsMi0wLjg5NiwyLTJDMzAsMTQuODk2LDI5LjEwNCwxNCwyOCwxNHogTTI4LDIySDRjLTEuMTA0LDAtMiwwLjg5Ni0yLDINCglzMC44OTYsMiwyLDJoMjRjMS4xMDQsMCwyLTAuODk2LDItMlMyOS4xMDQsMjIsMjgsMjJ6Ii8+DQo8L3N2Zz4NCg==);
-}
-
-a {
-    font-family: "Exo 2", sans-serif;
-}
-
-br {
-    content: " ";
-    margin: 5%;
-    display: block;
-}
-
-#textbox-search:hover {
-    box-shadow: 0 5px 20px rgba(0, 0, 0, .5);
-}
-
-
-#box-search {
-    padding: 10% 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin-bottom: 0.5rem;
-    font-family: "Exo 2", sans-serif;
-    font-weight: 500;
-    line-height: auto;
-}
-
-.adsi-css {
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-    padding: 10px 23px 10px 24px;
-    border: 0 solid #b7b7b7;
-    border-bottom-width: 1px;
-    -webkit-border-radius: 53px;
-    border-radius: 53px;
-    font: normal 16px / normal "Exo 2", sans-serif;
-    color: rgba(0, 0, 0, 1);
-    -o-text-overflow: clip;
-    text-overflow: clip;
-    height: 20px;
-    width: 15rem;
-}
-
-
-.btn-rounded {
-    background: #ec7c38;
-    border: 1px solid rgba(145, 59, 10, 1);
-    display: inline-block;
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-    cursor: pointer;
-    padding: 10px 20px;
-    -webkit-border-radius: 50px;
-    border-radius: 50px;
-    font: normal 16px / normal "Exo 2", sans-serif;
-    color: rgba(255, 255, 255, 0.9);
-    -o-text-overflow: clip;
-    text-overflow: clip;
-    -webkit-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
-    -moz-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
-    -o-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
-    transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
-    text-align: center;
-    text-decoration: none;
-}
-
-.btn-rounded:hover {
-    background-color: #fff;
-    color: black;
-    border: 2px solid #EC7C38;
-}
-
-/* ExtraSmall devices (landscape phones, 544px and up) */
-
-@media (min-width: 0px) {
-    h2 {
-        font-size: 1.2rem;
-    }
-}
-
-/* Small devices (landscape phones, 544px and up) */
-
-@media (min-width: 544px) {
-    h2 {
-        font-size: 1.4rem;
-    }
-
-    .table {
-        width: 88%;
-        float: none;
-    }
-}
-
-/* Medium devices (tablets, 768px and up) */
-
-@media (min-width: 768px) {
-    h2 {
-        font-size: 2rem;
-    }
-
-    .table {
-        width: 88%;
-        float: none;
-    }
-}
-
-/* Large devices (desktops, 992px and up) */
-
-@media (min-width: 992px) {
-    h2 {
-        font-size: 2rem;
-    }
-
-    .table {
-        width: 88%;
-        float: none;
-    }
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-
-@media (min-width: 1200px) {
-    h2 {
-        font-size: 2rem;
-    }
-
-    .table {
-        width: 88%;
-        float: none;
-    }
-}
+@import './customize.scss';

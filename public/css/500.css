@@ -1,13 +1,9 @@
 /*
-                                                                                           File   : 500 CSS
-                                                                                           Author : Chris
-                                                                                    Author URI    : https:                //codepen.io/chrisburton/pen/BsIrq
-                                                                                           License: <a href="#">NULL</a>
+    File   : 500 CSS
+    Author : Chris
+    Author URI    : https://codepen.io/chrisburton/pen/BsIrq
+    License: <a href="#">NULL</a>
 */
-
-@import url(./node_modules/font-awesome/css/font-awesome.min.css);
-@import url(../../node_modules/font-awesome/css/font-awesome.min.css);
-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400);
 html {
     font-size: 18px;
@@ -50,7 +46,7 @@ p {
     color      : #333;
 }
 
-/* 
+/*
 Server by @chrisburton
 */
 
