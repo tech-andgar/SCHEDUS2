@@ -1,0 +1,72 @@
+// Customize
+
+
+// // Borders
+// $laravel-border-color: darken($body-bg, 10%);
+// $list-group-border: $laravel-border-color;
+// $navbar-default-border: $laravel-border-color;
+// $panel-default-border: $laravel-border-color;
+// $panel-inner-border: $laravel-border-color;
+
+// Brands
+// $brand-primary: #3097D1;
+// $brand-info: #8eb4cb;
+// $brand-success: #2ab27b;
+// $brand-warning: #cbb956;
+// $brand-danger: #bf5329;
+
+// Typography
+// $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+$font-family-sans-serif: "Exo 2", sans-serif;
+// $font-size-base: 14px;
+// $line-height-base: 1.6;
+$text-color: #fff;
+
+// Navbar
+$navbar-default-bg: #ec7c38;
+
+// Buttons
+// $btn-default-color: $text-color;
+
+// Inputs
+// $input-border: lighten($text-color, 40%);
+// $input-border-focus: lighten($brand-primary, 25%);
+// $input-color-placeholder: lighten($text-color, 30%);
+
+// Panels
+// $panel-default-heading-bg: #fff;
+
+
+.app-header {
+    background-color: $navbar-default-bg;
+}
+
+.navbar-nav .nav-link {
+    color: $text-color;
+}
+
+.app-header .navbar-toggler-icon {
+    height: 23px;
+
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMzJweCIgaGVpZ2h0PSIzMnB4IiB2aWV3Qm94PSIwIDAgMzIgMzIiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik00LDEwaDI0YzEuMTA0LDAsMi0wLjg5NiwyLTJzLTAuODk2LTItMi0ySDRDMi44OTYsNiwyLDYuODk2LDIsOFMyLjg5NiwxMCw0LDEweiBNMjgsMTRINA0KCWMtMS4xMDQsMC0yLDAuODk2LTIsMmMwLDEuMTA0LDAuODk2LDIsMiwyaDI0YzEuMTA0LDAsMi0wLjg5NiwyLTJDMzAsMTQuODk2LDI5LjEwNCwxNCwyOCwxNHogTTI4LDIySDRjLTEuMTA0LDAtMiwwLjg5Ni0yLDINCglzMC44OTYsMiwyLDJoMjRjMS4xMDQsMCwyLTAuODk2LDItMlMyOS4xMDQsMjIsMjgsMjJ6Ii8+DQo8L3N2Zz4NCg==);
+}
+
+a {
+    font-family: $font-family-sans-serif;
+}
+
+#textbox-search:hover {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .5);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0.5rem;
+    font-family: "Exo 2", sans-serif;
+    font-weight: 500;
+    line-height: auto;
+}

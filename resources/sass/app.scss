@@ -1,14 +1,48 @@
+//--------
+// FONTS
+//--------
+@import url('https://fonts.googleapis.com/css?family=Days+One');
+@import url('https://fonts.googleapis.com/css?family=Exo+2');
 
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+//--------
+// ICONS
+//--------
+
+// CoreUI Icons
+@import '~@coreui/icons/scss/coreui-icons';
+
+// Flag Icons CSS
+//@import 'node_modules/flag-icon-css/css/flag-icon.min';
+
+// FontAwesome 5
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+
+// Font Awesome 4
+//@import '';
+
+// Simple Line Icons
+//@import 'node_modules/simple-line-icons/css/simple-line-icons';
+
+// Material Design Icons
+//@import '';
+
+
+//------
+// CSS
+//------
 
 // Variables
-@import 'variables';
+//@import 'variables';
 
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
+// Bootstrap 4
+//@import '~bootstrap/scss/bootstrap';
 
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
-}
+// CoreUI
+@import "~@coreui/coreui/scss/coreui";
+
+// Pace
+@import "~pace-progress/themes/blue/pace-theme-barber-shop.css";
+
+// Customize
+@import './customize.scss';
