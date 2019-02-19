@@ -5,7 +5,7 @@
     <a href="{{url(config('crudbooster.ADMIN_PATH'))}}" title='{{Session::get('appname')}}' class="logo">
         <span class="logo-mini">
             <img title='SCHEDUS'
-            src='{{ asset('images\Logo_SENA_Sliver.png') }}'
+            src='{{ asset('images\Logo_SENA_White.png') }}'
             style='max-width: 100%;max-height:170px'/>
         </span>
         <span class="logo-lg">
