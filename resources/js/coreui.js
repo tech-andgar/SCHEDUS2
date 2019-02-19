@@ -3,5 +3,5 @@ try {
     require('pace-js');
     require('perfect-scrollbar');
     require('@coreui/coreui');
-    require('chart.js/src');
+    require('chart.js');
 } catch (e) {}
